@@ -3,6 +3,7 @@
 ## Raw data:
 https://tcgcsv.com
 https://github.com/ppapuli102/MTG-Land-Recommender/tree/main/data/decklists (?)
+https://labs.limitlesstcg.com/decks?tournaments=75
 
 ## Parsable:
 https://mtgtop8.com
