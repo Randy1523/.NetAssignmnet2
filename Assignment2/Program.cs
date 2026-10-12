@@ -12,7 +12,7 @@ namespace Assignment2
             // see https://aka.ms/applicationconfiguration.
             //New coment
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new MainMenu());
         }
     }
 }

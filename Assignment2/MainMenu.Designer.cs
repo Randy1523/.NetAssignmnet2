@@ -1,6 +1,6 @@
 ﻿namespace Assignment2
 {
-    partial class Form1
+    partial class MainMenu
     {
         /// <summary>
         ///  Required designer variable.
@@ -84,7 +84,7 @@
             Title.Text = "TCG Market Plays";
             Title.Click += label1_Click;
             // 
-            // Form1
+            // MainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -94,8 +94,8 @@
             Controls.Add(TournamentData);
             Controls.Add(ViewDecklists);
             Controls.Add(CreateDecklist);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "MainMenu";
+            Text = "TCG Market Plays";
             ResumeLayout(false);
             PerformLayout();
         }
