@@ -28,35 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
+            selectPokemon = new Button();
+            selectMTG = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(484, 325);
-            button1.Name = "button1";
-            button1.Size = new Size(130, 49);
-            button1.TabIndex = 0;
-            button1.Text = "Pokemon";
-            button1.UseVisualStyleBackColor = true;
+            selectPokemon.Location = new Point(484, 325);
+            selectPokemon.Name = "button1";
+            selectPokemon.Size = new Size(130, 49);
+            selectPokemon.TabIndex = 0;
+            selectPokemon.Text = "Pokemon";
+            selectPokemon.UseVisualStyleBackColor = true;
+            selectPokemon.Click += selectPokemon_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(144, 325);
-            button2.Name = "button2";
-            button2.Size = new Size(130, 49);
-            button2.TabIndex = 1;
-            button2.Text = "Magic: The Gathering";
-            button2.UseVisualStyleBackColor = true;
+            selectMTG.Location = new Point(144, 325);
+            selectMTG.Name = "button2";
+            selectMTG.Size = new Size(130, 49);
+            selectMTG.TabIndex = 1;
+            selectMTG.Text = "Magic: The Gathering";
+            selectMTG.UseVisualStyleBackColor = true;
+            selectMTG.Click += selectMTG_Click;
             // 
             // TCGSelectCreate
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(selectMTG);
+            Controls.Add(selectPokemon);
             Name = "TCGSelectCreate";
             Text = "Select your TCG";
             ResumeLayout(false);
@@ -64,7 +66,7 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private Button selectPokemon;
+        private Button selectMTG;
     }
 }

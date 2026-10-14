@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Assignment2
+namespace Assignment2.Forms
 {
-    public partial class TCGSelectCreate : Form
+    public partial class CreateDeckListPokemon : Form
     {
-        public TCGSelectCreate()
+        public CreateDeckListPokemon()
         {
             InitializeComponent();
         }

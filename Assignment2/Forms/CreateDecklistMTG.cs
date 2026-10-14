@@ -8,11 +8,16 @@ using System.Windows.Forms;
 
 namespace Assignment2
 {
-    public partial class CreateDecklist : Form
+    public partial class CreateDecklistMTG : Form
     {
-        public CreateDecklist()
+        public CreateDecklistMTG()
         {
             InitializeComponent();
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

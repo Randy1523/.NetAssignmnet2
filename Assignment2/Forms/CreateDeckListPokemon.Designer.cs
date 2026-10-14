@@ -1,6 +1,6 @@
-﻿namespace Assignment2
+﻿namespace Assignment2.Forms
 {
-    partial class CreateDecklist
+    partial class CreateDeckListPokemon
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuspendLayout();
-            // 
-            // CreateDecklist
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Name = "CreateDecklist";
-            Text = "Create Decklist";
-            ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "CreateDeckListPokemon";
         }
 
         #endregion
