@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Assignment2
 {
-    internal class Utils
+    public class Utils
     {
     }
 }

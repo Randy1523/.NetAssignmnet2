@@ -38,6 +38,7 @@
             numericUpDown1 = new NumericUpDown();
             numericUpDown2 = new NumericUpDown();
             label6 = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             SuspendLayout();
@@ -134,11 +135,19 @@
             label6.TabIndex = 9;
             label6.Text = "Toughness";
             // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.Location = new Point(10, 172);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(1212, 496);
+            flowLayoutPanel1.TabIndex = 11;
+            // 
             // CreateDecklistMTG
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1234, 773);
+            Controls.Add(flowLayoutPanel1);
             Controls.Add(numericUpDown2);
             Controls.Add(label6);
             Controls.Add(numericUpDown1);
@@ -169,5 +178,6 @@
         private NumericUpDown numericUpDown1;
         private NumericUpDown numericUpDown2;
         private Label label6;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }
