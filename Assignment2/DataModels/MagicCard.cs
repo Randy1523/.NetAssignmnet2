@@ -11,13 +11,12 @@ namespace Assignment2.DataModels
 
         public string cardID { get; set; }
 
-        public int Power { get; set; }
+        //public int Power { get; set; }
 
-        public int Toughness { get; set; }
+        //public int Toughness { get; set; }
 
         public MagicCard(string name, string productID, string imageURL, int groupID, int categoryID,
-                         string type, float market, float low, float high, string rarity,string cardID
-                         int power, int toughness) {
+                         string type, float market, float low, float high, string rarity,string cardID) {
 
             Name = name;
             ProductID = productID;
@@ -30,8 +29,8 @@ namespace Assignment2.DataModels
             HighPrice = high;
             Rarity = rarity;
             this.cardID = cardID;
-            Power = power;
-            Toughness = toughness;
+            //Power = power;
+            //Toughness = toughness;
 
         }
     }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Assignment2.DataModels;
+using Assignment2.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +15,8 @@ namespace Assignment2
         public CreateDecklistMTG()
         {
             InitializeComponent();
+            //List<MagicCard> cards = FileManager.LoadMagicCards();
+            //LoadCards(cards);
         }
 
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
@@ -20,9 +24,18 @@ namespace Assignment2
 
         }
 
-        private void LoadCards(List<Card> cards)
+
+        //Function to load cards.
+        private void LoadCards(List<MagicCard> cards)
         {
             CardContainer.Controls.Clear();
+            
+            foreach(Card card in cards)
+            {
+                CardView cardView = new CardView();
+                CardContainer.Controls.Add(cardView);
+                cardView.setDetails(card);
+            }
         }
 
         private void FilterCards()
