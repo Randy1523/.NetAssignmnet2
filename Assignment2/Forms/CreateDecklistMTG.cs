@@ -19,5 +19,15 @@ namespace Assignment2
         {
 
         }
+
+        private void LoadCards(List<Card> cards)
+        {
+            CardContainer.Controls.Clear();
+        }
+
+        private void FilterCards()
+        {
+
+        }
     }
 }
