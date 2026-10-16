@@ -8,7 +8,7 @@ namespace Assignment2
     {
         public string Name { get; set; }
         public string ProductID { get; set; }
-        public string ImageURl {  get; set; }
+        public string ImageURL {  get; set; }
         
         public int GroupID { get; set; }
 
@@ -21,6 +21,8 @@ namespace Assignment2
         public float LowPrice { get; set; }
 
         public float HighPrice { get; set; }
+
+        public string Rarity { get; set; }
 
     }
 }
