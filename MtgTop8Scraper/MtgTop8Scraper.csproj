@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MtgTop8</RootNamespace>
+    <AssemblyName>MtgTop8Scraper</AssemblyName>
+	<PackageId>MtgTop8Scraper</PackageId>
+	<Version>1.1.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AngleSharp" Version="1.*" />
+    <PackageReference Include="PuppeteerSharp" Version="20.*" />
+  </ItemGroup>
+
+</Project>
