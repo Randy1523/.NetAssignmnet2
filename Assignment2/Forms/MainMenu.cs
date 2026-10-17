@@ -1,10 +1,18 @@
+using Assignment2.DataModels;
+
 namespace Assignment2
 {
     public partial class MainMenu : Form
     {
+
+        
         public MainMenu()
         {
             InitializeComponent();
+            //Load data into the static Lists.
+            FileManager.MagicCards = FileManager.LoadMagicCards();
+
+            FileManager.MagicCardLookup = Utils.CreateMagicLookup(FileManager.MagicCards);
         }
 
         private void button1_Click(object sender, EventArgs e)

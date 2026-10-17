@@ -64,7 +64,7 @@
             CardName.AutoSize = true;
             CardName.FlatStyle = FlatStyle.Flat;
             CardName.Font = new Font("Segoe UI", 10F);
-            CardName.Location = new Point(91, 222);
+            CardName.Location = new Point(37, 222);
             CardName.Name = "CardName";
             CardName.RightToLeft = RightToLeft.No;
             CardName.Size = new Size(45, 19);
@@ -80,7 +80,7 @@
             addCard.TabIndex = 3;
             addCard.Text = "+";
             addCard.UseVisualStyleBackColor = true;
-            addCard.Click += addCard_Click;
+
             // 
             // removeCard
             // 
@@ -90,12 +90,12 @@
             removeCard.TabIndex = 4;
             removeCard.Text = "-";
             removeCard.UseVisualStyleBackColor = true;
-            removeCard.Click += removeCard_Click;
+
             // 
             // Rarity
             // 
             Rarity.AutoSize = true;
-            Rarity.Location = new Point(91, 241);
+            Rarity.Location = new Point(37, 241);
             Rarity.Name = "Rarity";
             Rarity.Size = new Size(37, 15);
             Rarity.TabIndex = 5;
@@ -105,7 +105,7 @@
             // marketPrice
             // 
             marketPrice.AutoSize = true;
-            marketPrice.Location = new Point(91, 256);
+            marketPrice.Location = new Point(37, 256);
             marketPrice.Name = "marketPrice";
             marketPrice.Size = new Size(70, 15);
             marketPrice.TabIndex = 6;
@@ -115,7 +115,7 @@
             // LowPrice
             // 
             LowPrice.AutoSize = true;
-            LowPrice.Location = new Point(91, 271);
+            LowPrice.Location = new Point(37, 271);
             LowPrice.Name = "LowPrice";
             LowPrice.Size = new Size(55, 15);
             LowPrice.TabIndex = 7;
@@ -125,7 +125,7 @@
             // HighPrice
             // 
             HighPrice.AutoSize = true;
-            HighPrice.Location = new Point(91, 286);
+            HighPrice.Location = new Point(37, 286);
             HighPrice.Name = "HighPrice";
             HighPrice.Size = new Size(59, 15);
             HighPrice.TabIndex = 8;

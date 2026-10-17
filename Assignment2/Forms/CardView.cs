@@ -22,6 +22,8 @@ namespace Assignment2.Forms
 
         public string productID = "0";
 
+        public string RarityString = "";
+        public string Type = "";
         public int QuantityNum = 0;
         public CardView()
         {
@@ -49,32 +51,28 @@ namespace Assignment2.Forms
 
             productID = card.ProductID;
 
-            marketPrice.Text = card.MarketPrice.ToString();
+            RarityString = card.Rarity;
 
-            LowPrice.Text = card.LowPrice.ToString();
+            marketPrice.Text = "Market: " + card.MarketPrice.ToString();
 
-            HighPrice.Text = card.HighPrice.ToString();
+            LowPrice.Text = "Low: " + card.LowPrice.ToString();
 
-            Rarity.Text = card.Rarity;
+            HighPrice.Text = "High: " + card.HighPrice.ToString();
+
+            Rarity.Text = "Type: " + card.Rarity;
+
+            Type = card.CardType;
 
         }
 
-        private void addCard_Click(object sender, EventArgs e)
-        {
-            if(QuantityNum < 4)
-            {
-                QuantityNum++;
-                Quantity.Text = QuantityNum.ToString();
-            }
+        
+
+        public void SetQuantity(int quantity)
+        { 
+            QuantityNum = quantity;
+            Quantity.Text = QuantityNum.ToString();
         }
 
-        private void removeCard_Click(object sender, EventArgs e)
-        {
-            if (QuantityNum > 0)
-            {
-                QuantityNum--;
-                Quantity.Text = QuantityNum.ToString();
-            }
-        }
+        
     }
 }

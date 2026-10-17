@@ -8,4 +8,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\LocalDecks\Magic\" />
+    <Folder Include="Data\LocalDecks\Pokemon\" />
+  </ItemGroup>
+
 </Project>
