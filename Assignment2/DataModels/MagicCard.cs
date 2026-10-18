@@ -25,7 +25,7 @@ namespace Assignment2.DataModels
             LowPrice = low;
             HighPrice = high;
             Rarity = rarity;
-            this.cardID = cardID;
+            this.CardID = cardID;
 
         }
     }
