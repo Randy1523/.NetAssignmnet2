@@ -33,7 +33,19 @@ namespace Assignment2
             DeckPrice.Text = "Market: $0.0";
         }
 
-    
+        public CreateDecklistMTG(MagicDeck deck)
+        {
+            InitializeComponent();
+
+            Pages = Utils.ConvertToPages<MagicCard>(FileManager.MagicCards, 20);
+
+            this.deck = deck;
+            LoadCards(Pages[pageNum - 1]);
+            PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
+            DeckPrice.Text = "Market: $0.0";
+        }
+
+
         //Function to load cards.
         private void LoadCards(List<MagicCard> cards)
         {
@@ -196,6 +208,12 @@ namespace Assignment2
         private void button1_Click(object sender, EventArgs e)
         {
             FilterCards();
+        }
+
+        public void SetDeck(MagicDeck deck)
+        {
+            this.deck = deck;
+            LoadCards(Pages[pageNum-1]);
         }
     }
 }

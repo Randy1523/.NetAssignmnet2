@@ -32,7 +32,9 @@ namespace Assignment2
 
         private void ViewDecklists_Click(object sender, EventArgs e)
         {
+            ViewDecklistsSelect form = new ViewDecklistsSelect();
 
+            form.Show();
         }
     }
 }

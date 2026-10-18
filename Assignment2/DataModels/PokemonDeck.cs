@@ -12,7 +12,9 @@ namespace Assignment2.DataModels
          
         public PokemonDeck(int deckID)
         {
-
+            Cards = new Dictionary<PokemonCard, int>();
+            DeckCount = 0;
+            this.deckID = deckID;
         }
 
         public PokemonDeck()
@@ -77,6 +79,27 @@ namespace Assignment2.DataModels
                 {
                     Cards[card]++;
                     DeckCount++;
+                }
+
+
+            }
+        }
+
+        public void AddCard(PokemonCard card, int i)
+        {
+            if (card.GetType() == typeof(PokemonCard))
+            {
+                if (!Cards.ContainsKey(card))
+                {
+
+                    Cards.Add(card, i);
+                    DeckCount += i;
+
+                }
+                else
+                {
+                    Cards[card] += i;
+                    DeckCount += i;
                 }
 
 

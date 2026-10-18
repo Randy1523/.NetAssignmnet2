@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Assignment2.DataModels
 {
-    internal class MagicDeck : Deck
+    public class MagicDeck : Deck
     {
 
         public Dictionary<MagicCard, int> Cards;
@@ -15,6 +15,13 @@ namespace Assignment2.DataModels
             Cards = new Dictionary<MagicCard, int>();
             DeckCount = 0;
             deckID = Utils.GenerateDeckID();
+        }
+
+        public MagicDeck(int code)
+        {
+            Cards = new Dictionary<MagicCard, int>();
+            DeckCount = 0;
+            deckID = code;
         }
 
         //Caculates deck price
@@ -62,8 +69,29 @@ namespace Assignment2.DataModels
                 
             }
         }
-        
-        
+
+        public void AddCard(MagicCard card, int i)
+        {
+            if (card.GetType() == typeof(MagicCard))
+            {
+                if (!Cards.ContainsKey(card))
+                {
+
+                    Cards.Add(card, i);
+                    DeckCount += i;
+
+                }
+                else
+                {
+                    Cards[card] += i;
+                    DeckCount += i;
+                }
+
+
+            }
+        }
+
+
         public void RemoveCard(MagicCard card)
         {
             if (card.GetType() == typeof(MagicCard))
@@ -83,6 +111,7 @@ namespace Assignment2.DataModels
                 }
             }
         }
+
 
 
         //Checks if a card is within already

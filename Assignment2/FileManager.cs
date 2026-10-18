@@ -191,5 +191,34 @@ namespace Assignment2
             }
         }
 
+
+        public static List<MagicDeck> LoadMagicDecks()
+        {
+            List<MagicDeck> decks = new List<MagicDeck>();
+            
+            string[] paths = Directory.GetFiles("../../../Data/LocalDecks/Magic/", "*.txt");
+
+            foreach (string path in paths)
+            {
+                
+
+                string[] lines = File.ReadAllLines(path);
+                MagicDeck deck = new MagicDeck(Int32.Parse(lines[0]));
+
+                for(int i = 1; i < lines.Length; i++)
+                {
+                    string[] split = lines[i].Split('|');
+
+                    MagicCard card = MagicCardLookup[new Pair(split[0], split[1])];
+
+                    deck.AddCard(card, Int32.Parse(split[3]));
+                }
+
+                decks.Add(deck);
+                
+            }
+
+            return decks;
+        }
     }
 }

@@ -6,18 +6,13 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Assignment2
+namespace Assignment2.Forms
 {
-    public partial class ViewDecklists : Form
+    public partial class PokemonDecklists : Form
     {
-        public ViewDecklists()
+        public PokemonDecklists()
         {
             InitializeComponent();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

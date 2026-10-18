@@ -1,6 +1,6 @@
-﻿namespace Assignment2
+﻿namespace Assignment2.Forms
 {
-    partial class ViewDecklists
+    partial class MTGDecklists
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DecklistPanel = new FlowLayoutPanel();
             SuspendLayout();
             // 
-            // Form2
+            // DecklistPanel
+            // 
+            DecklistPanel.AutoScroll = true;
+            DecklistPanel.Location = new Point(12, 12);
+            DecklistPanel.Name = "DecklistPanel";
+            DecklistPanel.Size = new Size(970, 508);
+            DecklistPanel.TabIndex = 0;
+            // 
+            // MTGDecklists
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Name = "Form2";
-            Text = "Form2";
-            Load += Form2_Load;
+            ClientSize = new Size(994, 532);
+            Controls.Add(DecklistPanel);
+            Name = "MTGDecklists";
+            Text = "MTGDecklists";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private FlowLayoutPanel DecklistPanel;
     }
 }
