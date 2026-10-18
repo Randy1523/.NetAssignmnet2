@@ -1,0 +1,168 @@
+productId,name,cleanName,imageUrl,categoryId,groupId,url,modifiedOn,imageCount,lowPrice,midPrice,highPrice,marketPrice,directLowPrice,subTypeName,extRarity,extNumber,extSubType,extP,extT,extOracleText,extFlavorText
+91644,Duel Decks: Speed vs. Cunning - Box Set,Duel Decks Speed vs Cunning Box Set,https://tcgplayer-cdn.tcgplayer.com/product/91644_200w.jpg,1,1477,https://cpt.tcgcsv.com/VGL,2014-09-13T15:39:55.63,1,23.98,27.99,49.99,26.96,,Normal,,,,,,,
+91645,Zurgo Helmsmasher,Zurgo Helmsmasher,https://tcgplayer-cdn.tcgplayer.com/product/91645_200w.jpg,1,1477,https://cpt.tcgcsv.com/WGL,2024-03-13T18:24:30.72,1,0.19,0.63,10.77,0.59,,Foil,M,1,Legendary Creature — Orc Warrior,7,2,"Haste
+<br>
+Zurgo Helmsmasher attacks each combat if able.
+<br>
+Zurgo Helmsmasher has indestructible as long as it’s your turn.
+<br>
+Whenever a creature dealt damage by Zurgo Helmsmasher this turn dies, put a +1/+1 counter on Zurgo Helmsmasher.",
+91646,Arcanis the Omnipotent,Arcanis the Omnipotent,https://tcgplayer-cdn.tcgplayer.com/product/91646_200w.jpg,1,1477,https://cpt.tcgcsv.com/XGL,2024-08-15T14:35:02.453,1,0.23,0.5,20.0,0.45,,Foil,M,42,Legendary Creature — Wizard,3,4,"T: Draw three cards.
+<br>
+UU: Return Arcanis the Omnipotent to its owner's hand.","<em>“Do not concern yourself with my origin, my race, or my ancestry. Seek my record in the pits, and then make your wager.”</em>"
+92851,Frenzied Goblin,Frenzied Goblin,https://tcgplayer-cdn.tcgplayer.com/product/92851_200w.jpg,1,1477,https://cpt.tcgcsv.com/29M,2024-07-26T17:49:40.907,1,0.06,0.25,7.08,0.19,0.11,Normal,U,2,Creature — Goblin Berserker,1,1,"Whenever Frenzied Goblin attacks, you may pay R. If you do, target creature can’t block this turn.",<em>The upside to not thinking about the consequences is that you'll always surprise those who do.</em>
+92852,Willbender,Willbender,https://tcgplayer-cdn.tcgplayer.com/product/92852_200w.jpg,1,1477,https://cpt.tcgcsv.com/39M,2024-03-13T18:23:47.523,1,0.09,0.39,9.99,0.34,0.21,Normal,U,47,Creature — Human Wizard,1,2,"Morph 1U <em>(You may cast this face down as a 2/2 creature for 3. Turn it face up any time for its morph cost.)</em>
+<br>
+When Willbender is turned face up, change the target of target spell or ability with a single target.",
+92853,Whiplash Trap,Whiplash Trap,https://tcgplayer-cdn.tcgplayer.com/product/92853_200w.jpg,1,1477,https://cpt.tcgcsv.com/59M,2026-03-20T23:35:39.703,1,0.06,0.25,7.08,0.19,0.08,Normal,C,70,Instant — Trap,,,"If an opponent had two or more creatures enter the battlefield under his or her control this turn, you may pay U rather than pay Whiplash Trap's mana cost.
+<br>
+Return two target creatures to their owners' hands.",
+92854,Act of Treason,Act of Treason,https://tcgplayer-cdn.tcgplayer.com/product/92854_200w.jpg,1,1477,https://cpt.tcgcsv.com/69M,2025-12-03T05:33:28.733,1,0.04,0.23,1.99,0.22,,Normal,C,26,Sorcery,,,Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.,"<em>""Rage courses in every heart, yearning to betray its rational prison.""<br>—Sarkhan Vol</em>"
+92855,Aquamorph Entity,Aquamorph Entity,https://tcgplayer-cdn.tcgplayer.com/product/92855_200w.jpg,1,1477,https://cpt.tcgcsv.com/79M,2025-12-03T05:34:25.57,1,0.01,0.25,7.08,0.23,0.04,Normal,C,54,Creature — Shapeshifter,*,*,"As Aquamorph Entity comes into play or is turned face up, it becomes your choice of 5/1 or 1/5.
+<br>
+Morph 2U <em>(You may play this face down as a 2/2 creature for 3. Turn it face up any time for its morph cost.)</em>",
+92856,Arc Trail,Arc Trail,https://tcgplayer-cdn.tcgplayer.com/product/92856_200w.jpg,1,1477,https://cpt.tcgcsv.com/89M,2024-03-13T16:53:36.5,1,0.05,0.3,9.99,0.18,0.15,Normal,U,23,Sorcery,,,Arc Trail deals 2 damage to target creature or player and 1 damage to another target creature or player.,"<em>""Don't try to hit your enemies. Concentrate on the space between them, and fill the air with doom.""<br>—Spear-tribe teaching</em>"
+92857,Traumatic Visions,Traumatic Visions,https://tcgplayer-cdn.tcgplayer.com/product/92857_200w.jpg,1,1477,https://cpt.tcgcsv.com/99M,2025-12-03T06:00:09.28,1,0.01,0.21,9.99,0.04,,Normal,C,69,Instant,,,"Counter target spell.
+<br>
+Basic landcycling 1U <em>(1U, Discard this card: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.)</em>",
+92858,Arrow Volley Trap,Arrow Volley Trap,https://tcgplayer-cdn.tcgplayer.com/product/92858_200w.jpg,1,1477,https://cpt.tcgcsv.com/b9M,2026-02-17T12:45:19.71,1,0.03,0.25,9.99,0.15,,Normal,U,071/082,Instant — Trap,,,"If four or more creatures are attacking, you may pay 1W rather than pay Arrow Volley Trap's mana cost.
+<br>
+Arrow Volley Trap deals 5 damage divided as you choose among any number of target attacking creatures.",
+92859,Thousand Winds,Thousand Winds,https://tcgplayer-cdn.tcgplayer.com/product/92859_200w.jpg,1,1477,https://cpt.tcgcsv.com/c9M,2025-11-10T22:39:56.123,1,0.07,0.35,34.99,0.14,,Normal,R,58,Creature — Elemental,5,6,"Flying
+<br>
+Morph 5UU <em>(You may cast this card face down as a 2/2 creature for 3. Turn it face up any time for its morph cost.)</em>
+<br>
+When Thousand Winds is turned face up, return all other tapped creatures to their owners' hands.",
+92860,Terramorphic Expanse,Terramorphic Expanse,https://tcgplayer-cdn.tcgplayer.com/product/92860_200w.jpg,1,1477,https://cpt.tcgcsv.com/d9M,2025-12-03T05:59:31.887,1,0.1,0.27,5.0,0.27,,Normal,C,74,Land,,,"T, Sacrifice Terramorphic Expanse: Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.",
+92861,Banefire,Banefire,https://tcgplayer-cdn.tcgplayer.com/product/92861_200w.jpg,1,1477,https://cpt.tcgcsv.com/f9M,2024-03-13T17:09:14.01,1,0.49,0.69,20.0,0.56,0.66,Normal,R,31,Sorcery,,,"Banefire deals X damage to target creature or player. If X is 5 or more, Banefire can't be countered by spells or abilities and the damage can't be prevented.","<em>For Sarkhan Vol, the dragon is the purest expression of life's savage splendor.</em>"
+92862,Swift Justice,Swift Justice,https://tcgplayer-cdn.tcgplayer.com/product/92862_200w.jpg,1,1477,https://cpt.tcgcsv.com/g9M,2024-03-13T18:20:52.95,1,0.03,0.25,1.99,0.07,,Normal,C,62,Instant,,,"Until end of turn, target creature gets +1/+0 and gains first strike and lifelink.","<em>""Having conviction is more important than being righteous.""<br>—Aurelia</em>"
+92863,Beetleback Chief,Beetleback Chief,https://tcgplayer-cdn.tcgplayer.com/product/92863_200w.jpg,1,1477,https://cpt.tcgcsv.com/h9M,2024-03-13T17:12:38.693,1,0.12,0.26,3.0,0.22,,Normal,U,14,Creature — Goblin Warrior,2,2,"When Beetleback Chief enters the battlefield, put two 1/1 red Goblin creature tokens onto the battlefield.","<em>Whether trained, ridden, or eaten, few goblin military innovations have rivaled the bug.</em>"
+92864,Stonecloaker,Stonecloaker,https://tcgplayer-cdn.tcgplayer.com/product/92864_200w.jpg,1,1477,https://cpt.tcgcsv.com/j9M,2025-12-03T05:58:17.817,1,0.05,0.35,20.0,0.12,,Normal,U,53,Creature — Gargoyle,3,2,"Flash <em>(You may cast this spell any time you could cast an instant.)</em>
+<br>
+Flying
+<br>
+When Stonecloaker enters the battlefield, return a creature you control to its owner's hand.
+<br>
+When Stonecloaker enters the battlefield, exile target card from a graveyard.",
+92865,Bone Splinters,Bone Splinters,https://tcgplayer-cdn.tcgplayer.com/product/92865_200w.jpg,1,1477,https://cpt.tcgcsv.com/k9M,2024-03-13T17:16:36.33,1,0.01,0.2,8.47,0.1,,Normal,C,22,Sorcery,,,"As an additional cost to play Bone Splinters, sacrifice a creature.
+<br>
+Destroy target creature.","<em>Witches of the Split-Eye Coven speak of a future when Grixis will overflow with life energy. For now, they must harvest vis from the living to fuel their dark magics.</em>"
+92866,Swamp (039),Swamp 039,https://tcgplayer-cdn.tcgplayer.com/product/92866_200w.jpg,1,1477,https://cpt.tcgcsv.com/l9M,2024-03-13T18:18:02.263,1,0.07,0.25,3.99,0.14,,Normal,L,39,Basic Land — Swamp,,,,
+92867,Coral Trickster,Coral Trickster,https://tcgplayer-cdn.tcgplayer.com/product/92867_200w.jpg,1,1477,https://cpt.tcgcsv.com/m9M,2024-03-13T17:18:02.657,1,0.01,0.25,7.08,0.06,0.04,Normal,C,44,Creature — Merfolk Rogue,2,1,"Morph U <em>(You may play this face down as a 2/2 creature for 3. Turn it face up any time for its morph cost.)</em>
+<br>
+When Coral Trickster is turned face up, you may tap or untap target permanent.","<em>They wait in darkened depths, laughing eagerly.</em>"
+92868,Swamp (040),Swamp 040,https://tcgplayer-cdn.tcgplayer.com/product/92868_200w.jpg,1,1477,https://cpt.tcgcsv.com/n9M,2024-03-13T18:18:23.937,1,0.07,0.25,3.99,0.16,,Normal,L,40,Basic Land — Swamp,,,,
+92869,Swamp (041),Swamp 041,https://tcgplayer-cdn.tcgplayer.com/product/92869_200w.jpg,1,1477,https://cpt.tcgcsv.com/p9M,2024-03-13T18:19:01.63,1,0.06,0.22,3.99,0.22,,Normal,L,41,Basic Land — Swamp,,,,
+92870,Steam Augury,Steam Augury,https://tcgplayer-cdn.tcgplayer.com/product/92870_200w.jpg,1,1477,https://cpt.tcgcsv.com/q9M,2024-03-13T18:16:00.133,1,0.05,0.3,39.99,0.16,,Normal,R,68,Instant,,,Reveal the top five cards of your library and separate them into two piles. An opponent chooses one of those piles. Put that pile into your hand and the other into your graveyard.,"<em>Keranos is a fickle god, delivering punishment as readily as prophecy.</em>"
+92871,Dauntless Onslaught,Dauntless Onslaught,https://tcgplayer-cdn.tcgplayer.com/product/92871_200w.jpg,1,1477,https://cpt.tcgcsv.com/r9M,2026-01-27T19:38:04.307,1,0.01,0.25,9.99,0.06,,Normal,U,6,Instant,,,Up to two target creatures each get +2/+2 until end of turn.,"<em>""The people of Akros must learn from our leonin adversaries. If we match their staunch ferocity with our superior faith, we cannot fail.""<br>—Cymede, queen of Akros</em>"
+92872,Stave Off,Stave Off,https://tcgplayer-cdn.tcgplayer.com/product/92872_200w.jpg,1,1477,https://cpt.tcgcsv.com/s9M,2024-03-13T18:14:59.477,1,0.04,0.27,20.0,0.15,,Normal,C,61,Instant,,,"Target creature gains protection from the color of your choice until end of turn. <em>(It can't be blocked, targeted, dealt damage, or enchanted by anything of that color.)</em>",
+92873,Dregscape Zombie,Dregscape Zombie,https://tcgplayer-cdn.tcgplayer.com/product/92873_200w.jpg,1,1477,https://cpt.tcgcsv.com/t9M,2026-01-27T16:47:56.17,1,0.05,0.2,1.99,0.12,,Normal,C,5,Creature — Zombie,2,1,Unearth B <em>(B: Return this card from your graveyard to play. It gains haste. Remove it from the game at end of turn or if it would leave play. Unearth only as a sorcery.)</em>,<em>The undead of Grixis are fueled by their hatred of the living.</em>
+92874,Sphinx of Uthuun,Sphinx of Uthuun,https://tcgplayer-cdn.tcgplayer.com/product/92874_200w.jpg,1,1477,https://cpt.tcgcsv.com/v9M,2025-11-10T22:38:58.313,1,0.08,0.35,29.99,0.22,0.16,Normal,R,59,Creature — Sphinx,5,6,"Flying
+<br>
+When Sphinx of Uthuun enters the battlefield, reveal the top five cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other into your graveyard.",
+92875,Echo Tracer,Echo Tracer,https://tcgplayer-cdn.tcgplayer.com/product/92875_200w.jpg,1,1477,https://cpt.tcgcsv.com/w9M,2024-03-13T17:19:40.907,1,0.06,0.25,2.23,0.23,,Normal,C,51,Creature — Human Wizard,2,2,"Morph 2U <em>(You may play this face down as a 2/2 creature for 3. Turn it face up any time for its morph cost.)</em>
+<br>
+When Echo Tracer is turned face up, return target creature to its owner's hand.",
+92876,Sparkmage Apprentice,Sparkmage Apprentice,https://tcgplayer-cdn.tcgplayer.com/product/92876_200w.jpg,1,1477,https://cpt.tcgcsv.com/x9M,2025-12-03T05:56:55.073,1,0.04,0.25,7.08,0.25,0.05,Normal,C,48,Creature — Human Wizard,1,1,"When Sparkmage Apprentice enters the battlefield, it deals 1 damage to target creature or player.","<em>Sparkmages are performance artists of sorts, but pain is the price of admission.</em>"
+92877,Shock,Shock,https://tcgplayer-cdn.tcgplayer.com/product/92877_200w.jpg,1,1477,https://cpt.tcgcsv.com/z9M,2024-03-13T18:12:43.69,1,0.04,0.24,3.99,0.15,,Normal,C,21,Instant,,,Shock deals 2 damage to target creature or player.,"<em>""The beauty of it is they never see it coming. Ever.""<br>—Razzix, sparkmage</em>"
+92878,Evolving Wilds,Evolving Wilds,https://tcgplayer-cdn.tcgplayer.com/product/92878_200w.jpg,1,1477,https://cpt.tcgcsv.com/B9M,2026-01-07T20:23:59.907,1,0.06,0.25,7.08,0.23,0.1,Normal,C,32,Land,,,"T, Sacrifice Evolving Wilds: Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.","<em>Without the interfering hands of civilization, nature will always shape itself to its own needs.</em>"
+92879,Shambling Remains,Shambling Remains,https://tcgplayer-cdn.tcgplayer.com/product/92879_200w.jpg,1,1477,https://cpt.tcgcsv.com/C9M,2024-03-13T18:09:39.237,1,0.03,0.27,9.99,0.23,0.03,Normal,U,12,Creature — Zombie Horror,4,3,"Shambling Remains can't block.
+<br>
+Unearth BR <em>(BR: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)</em>",
+92880,Scourge Devil,Scourge Devil,https://tcgplayer-cdn.tcgplayer.com/product/92880_200w.jpg,1,1477,https://cpt.tcgcsv.com/D9M,2024-03-13T18:08:29.193,1,0.03,0.25,1.55,0.15,,Normal,U,18,Creature — Devil,3,3,"When Scourge Devil enters the battlefield, creatures you control get +1/+0 until end of turn.
+<br>
+Unearth 2R <em>(2R: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)</em>",
+92881,Repeal,Repeal,https://tcgplayer-cdn.tcgplayer.com/product/92881_200w.jpg,1,1477,https://cpt.tcgcsv.com/F9M,2024-03-13T18:07:57.61,1,0.04,0.25,2.99,0.1,,Normal,C,72,Instant,,,"Return target nonland permanent with converted mana cost X to its owner's hand.
+<br>
+Draw a card.","<em>""Your deed cannot be undone. You, however, can be.""<br>—Agosto, Azorius imperator</em>"
+92882,Reckless Abandon,Reckless Abandon,https://tcgplayer-cdn.tcgplayer.com/product/92882_200w.jpg,1,1477,https://cpt.tcgcsv.com/G9M,2024-03-13T18:04:58.577,1,0.1,0.27,2.23,0.23,,Normal,C,20,Sorcery,,,"As an additional cost to cast Reckless Abandon, sacrifice a creature.
+<br>
+Reckless Abandon deals 4 damage to target creature or player.",<em>The climax of a warlord’s career is always death.</em>
+92884,Orcish Cannonade,Orcish Cannonade,https://tcgplayer-cdn.tcgplayer.com/product/92884_200w.jpg,1,1477,https://cpt.tcgcsv.com/J9M,2024-03-13T18:03:44.97,1,0.01,0.21,1.99,0.09,,Normal,C,28,Instant,,,"Orcish Cannonade deals 2 damage to target creature or player and 3 damage to you.
+<br>
+Draw a card.","<em>""Crispy! Scarback! Load another volcano-ball.""<br>—Stumphobbler Thuj, orcish captain</em>"
+92885,Plains (038),Plains 038,https://tcgplayer-cdn.tcgplayer.com/product/92885_200w.jpg,1,1477,https://cpt.tcgcsv.com/K9M,2024-03-13T18:27:33.02,1,0.09,0.2,3.99,0.1,,Normal,L,38,Basic Land — Plains,,,,
+92887,Plains (079),Plains 079,https://tcgplayer-cdn.tcgplayer.com/product/92887_200w.jpg,1,1477,https://cpt.tcgcsv.com/M9M,2024-03-13T18:04:11.337,1,0.09,0.2,3.99,0.17,,Normal,L,79,Basic Land — Plains,,,,
+92888,Plains (080),Plains 080,https://tcgplayer-cdn.tcgplayer.com/product/92888_200w.jpg,1,1477,https://cpt.tcgcsv.com/N9M,2025-03-20T12:55:38.78,1,0.04,0.25,3.99,0.26,,Normal,L,80,Basic Land — Plains,,,,
+92890,Plains (081),Plains 081,https://tcgplayer-cdn.tcgplayer.com/product/92890_200w.jpg,1,1477,https://cpt.tcgcsv.com/Q9M,2024-03-13T18:27:56.857,1,0.1,0.2,3.99,0.1,,Normal,L,81,Basic Land — Plains,,,,
+92892,Oni of Wild Places,Oni of Wild Places,https://tcgplayer-cdn.tcgplayer.com/product/92892_200w.jpg,1,1477,https://cpt.tcgcsv.com/S9M,2024-03-13T18:03:07.173,1,0.07,0.3,9.99,0.11,0.2,Normal,U,19,Creature — Demon Spirit,6,5,"Haste
+<br>
+At the beginning of your upkeep, return a red creature you control to its owner's hand.","<em>The oni leapt easily from peak to peak, toying with its victims, its voice a purr from the rumbling depths of nightmare.</em>"
+92893,Ogre Battledriver,Ogre Battledriver,https://tcgplayer-cdn.tcgplayer.com/product/92893_200w.jpg,1,1477,https://cpt.tcgcsv.com/T9M,2024-03-13T18:02:27.833,1,0.25,0.51,5.99,0.51,,Normal,R,16,Creature — Ogre Warrior,3,3,"Whenever another creature enters the battlefield under your control, that creature gets +2/+0 and gains haste until end of turn.","<em>Ogres are driven by passion, rage, and another ogre standing behind them with a whip.</em>"
+92895,Nomad Outpost,Nomad Outpost,https://tcgplayer-cdn.tcgplayer.com/product/92895_200w.jpg,1,1477,https://cpt.tcgcsv.com/W9M,2024-03-13T18:02:07.82,1,0.13,0.36,10.0,0.32,,Normal,U,34,Land,,,"Nomad Outpost enters the battlefield tapped.
+<br>
+T: Add R, W, or B to your mana pool.","<em>""Only the weak imprison themselves behind walls. We live free under the wind, and our freedom makes us strong.""<br>—Zurgo, khan of the Mardu</em>"
+92897,Mystic Monastery,Mystic Monastery,https://tcgplayer-cdn.tcgplayer.com/product/92897_200w.jpg,1,1477,https://cpt.tcgcsv.com/Z9M,2024-03-13T18:01:20.827,1,0.12,0.3,9.99,0.29,0.15,Normal,U,73,Land,,,"Mystic Monastery enters the battlefield tapped.
+<br>
+T: Add U, R, or W to your mana pool.","<em>When asked how many paths reach enlightenment, the monk kicked a heap of sand. ""Count,"" he smiled, ""and then find more grains.""</em>"
+92899,Master Decoy,Master Decoy,https://tcgplayer-cdn.tcgplayer.com/product/92899_200w.jpg,1,1477,https://cpt.tcgcsv.com/_9M,2025-12-03T05:54:28.793,1,0.04,0.26,7.08,0.27,0.14,Normal,C,50,Creature — Human Soldier,1,2,"W, T: Tap target creature.",<em>A skilled decoy can throw your enemies off your trail.  A master decoy can survive to do it again.</em>
+92900,Mountain (078),Mountain 078,https://tcgplayer-cdn.tcgplayer.com/product/92900_200w.jpg,1,1477,https://cpt.tcgcsv.com/0bM,2024-03-13T18:27:07.863,1,0.07,0.2,3.99,0.15,,Normal,L,78,Basic Land — Mountain,,,,
+92901,Mountain (037),Mountain 037,https://tcgplayer-cdn.tcgplayer.com/product/92901_200w.jpg,1,1477,https://cpt.tcgcsv.com/2bM,2024-03-13T18:26:35.583,1,0.08,0.2,3.99,0.09,,Normal,L,37,Basic Land — Mountain,,,,
+92902,Mountain (036),Mountain 036,https://tcgplayer-cdn.tcgplayer.com/product/92902_200w.jpg,1,1477,https://cpt.tcgcsv.com/3bM,2024-07-26T17:49:41.237,1,0.1,0.21,3.99,0.11,,Normal,L,36,Basic Land — Mountain,,,,
+92904,Mountain (035),Mountain 035,https://tcgplayer-cdn.tcgplayer.com/product/92904_200w.jpg,1,1477,https://cpt.tcgcsv.com/6bM,2024-03-13T18:26:05.927,1,0.05,0.27,3.99,0.4,,Normal,L,35,Basic Land — Mountain,,,,
+92905,Mardu Heart-Piercer,Mardu Heart Piercer,https://tcgplayer-cdn.tcgplayer.com/product/92905_200w.jpg,1,1477,https://cpt.tcgcsv.com/7bM,2024-03-13T17:59:02.873,1,0.04,0.25,9.99,0.08,,Normal,U,13,Creature — Human Archer,2,3,"Raid — When Mardu Heart-Piercer enters the battlefield, if you attacked with a creature this turn, Mardu Heart-Piercer deals 2 damage to target creature or player.","<em>""Those who have never ridden before the wind do not know the true joy of war.""</em>"
+92907,Mana Leak,Mana Leak,https://tcgplayer-cdn.tcgplayer.com/product/92907_200w.jpg,1,1477,https://cpt.tcgcsv.com/9bM,2024-07-26T17:49:41.3,1,0.17,0.4,20.0,0.49,1.66,Normal,C,64,Instant,,,Counter target spell unless its controller pays 3.,<em>The fatal flaw in every plan is the assumption that you know more than your enemy.</em>
+92908,Lone Missionary,Lone Missionary,https://tcgplayer-cdn.tcgplayer.com/product/92908_200w.jpg,1,1477,https://cpt.tcgcsv.com/bbM,2024-03-13T17:57:57.157,1,0.1,0.25,4.24,0.21,,Normal,C,49,Creature — Kor Monk,2,1,"When Lone Missionary enters the battlefield, you gain 4 life.","<em>His mission has become a grim pilgrimage, a tour of the Eldrazi-stricken outposts across Zendikar. But he marches on alone, stubborn as the daily dawn.</em>"
+92909,Lightning Helix,Lightning Helix,https://tcgplayer-cdn.tcgplayer.com/product/92909_200w.jpg,1,1477,https://cpt.tcgcsv.com/cbM,2025-12-03T05:53:14.713,1,0.14,0.34,3.48,0.26,,Normal,U,65,Instant,,,Lightning Helix deals 3 damage to target creature or player and you gain 3 life.,"<em>Though less well-known than its army of soldiers, the Boros Legion's mage-priests are as respected by the innocent as they are hated by the ghosts of the guilty.</em>"
+92910,Faerie Impostor,Faerie Impostor,https://tcgplayer-cdn.tcgplayer.com/product/92910_200w.jpg,1,1477,https://cpt.tcgcsv.com/dbM,2026-01-07T20:24:50.89,1,0.1,0.35,25.0,0.31,0.2,Normal,U,43,Creature — Faerie Rogue,2,1,"Flying
+<br>
+When Faerie Imposter enters the battlefield, sacrifice it unless you return another creature you control to its owner's hand.","<em>Many Tin Street shops display a sign on the door: ""No cloaks allowed.""</em>"
+92911,Lightning Angel,Lightning Angel,https://tcgplayer-cdn.tcgplayer.com/product/92911_200w.jpg,1,1477,https://cpt.tcgcsv.com/fbM,2025-12-03T05:52:03.52,1,0.15,0.41,39.99,0.33,,Normal,R,56,Creature — Angel,3,4,"Flying, vigilance, haste","<em>Sudden vengeance, echoing fury.</em>"
+92912,Faerie Invaders,Faerie Invaders,https://tcgplayer-cdn.tcgplayer.com/product/92912_200w.jpg,1,1477,https://cpt.tcgcsv.com/gbM,2025-12-03T05:41:28.927,1,0.05,0.25,7.08,0.21,0.2,Normal,C,57,Creature — Faerie Rogue,3,3,"Flash <em>(You may cast this spell any time you could cast an instant.)</em>
+<br>
+Flying",<em>Small enough to penetrate the narrowest crack in a castle wall and numerous enough to hack apart a griffin.</em>
+92913,Leonin Snarecaster,Leonin Snarecaster,https://tcgplayer-cdn.tcgplayer.com/product/92913_200w.jpg,1,1477,https://cpt.tcgcsv.com/hbM,2024-03-13T17:57:04.903,1,0.02,0.2,1.99,0.04,,Normal,C,4,Creature — Cat Soldier,2,1,"When Leonin Snarecaster enters the battlefield, you may tap target creature.","<em>Formerly oppressed by the polis of Meletis, leonin occasionally ""mistake"" their old enemies for game.</em>"
+92914,Fathom Seer,Fathom Seer,https://tcgplayer-cdn.tcgplayer.com/product/92914_200w.jpg,1,1477,https://cpt.tcgcsv.com/jbM,2024-03-13T17:22:30.593,1,0.01,0.24,1.99,0.23,,Normal,C,45,Creature — Illusion,1,3,"Morph—Return two Islands you control to their owner's hand. <em>(You may play this face down as a 2/2 creature for 3. Turn it face up any time for its morph cost.)</em>
+<br>
+When Fathom Seer is turned face up, draw two cards.",
+92915,Krenko's Command,Krenkos Command,https://tcgplayer-cdn.tcgplayer.com/product/92915_200w.jpg,1,1477,https://cpt.tcgcsv.com/kbM,2025-12-03T05:51:19.757,1,0.1,0.28,9.49,0.28,,Normal,C,25,Sorcery,,,Put two 1/1 red Goblin creature tokens onto the battlefield.,"<em>Goblins are eager to follow orders, especially when those orders involve stealing, hurting, annoying, eating, destroying or swearing.</em>"
+92916,Fiery Fall,Fiery Fall,https://tcgplayer-cdn.tcgplayer.com/product/92916_200w.jpg,1,1477,https://cpt.tcgcsv.com/lbM,2024-03-13T17:22:55.607,1,0.01,0.24,7.08,0.06,0.03,Normal,C,29,Instant,,,"Fiery Fall deals 5 damage to target creature.
+<br>
+Basic landcycling 1R <em>(1R, Discard this card: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.)</em>",<em>Jund feasts on the underprepared.</em>
+92917,"Krenko, Mob Boss",Krenko Mob Boss,https://tcgplayer-cdn.tcgplayer.com/product/92917_200w.jpg,1,1477,https://cpt.tcgcsv.com/mbM,2024-03-13T17:56:23.017,1,1.94,3.02,20.0,2.21,,Normal,R,15,Legendary Creature — Goblin Warrior,3,3,"T: Put X 1/1 red Goblin creatures onto the battlefield, where X is the number of Goblins you control.","<em>""He displays a perverse charisma fueled by avarice. Highly dangerous. Recommend civil sanctions.""<br>—Agmand Sarv, Azorius hussar</em>"
+92918,Flame-Kin Zealot,Flame Kin Zealot,https://tcgplayer-cdn.tcgplayer.com/product/92918_200w.jpg,1,1477,https://cpt.tcgcsv.com/nbM,2024-03-13T17:23:36.527,1,0.02,0.25,3.0,0.15,,Normal,U,17,Creature — Elemental Berserker,2,2,"When Flame-Kin Zealot enters the battlefield, creatures you control get +1/+1 and gain haste until end of turn.","<em>Boros soldiers are like a cache of bombs ready to explode, and the flame-kin light their fuses.</em>"
+92919,Kor Hookmaster,Kor Hookmaster,https://tcgplayer-cdn.tcgplayer.com/product/92919_200w.jpg,1,1477,https://cpt.tcgcsv.com/pbM,2024-03-13T17:56:00.22,1,0.01,0.21,7.08,,0.05,Normal,C,52,Creature — Kor Soldier,2,2,"When Kor Hookmaster enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.","<em>""For us, a rope represents the ties that bind the kor. For you, it's more literal.""</em>"
+92920,Kathari Bomber,Kathari Bomber,https://tcgplayer-cdn.tcgplayer.com/product/92920_200w.jpg,1,1477,https://cpt.tcgcsv.com/qbM,2025-12-03T05:50:31.097,1,0.03,0.28,7.08,0.29,0.06,Normal,C,11,Creature — Bird Shaman,2,2,"Flying
+<br>
+When Kathari Bomber deals combat damage to a player, put two 1/1 red Goblin creature tokens into play and sacrifice Kathari Bomber.
+<br>
+Unearth 3BR <em>(3BR: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)</em>",
+92921,Fleeting Distraction,Fleeting Distraction,https://tcgplayer-cdn.tcgplayer.com/product/92921_200w.jpg,1,1477,https://cpt.tcgcsv.com/rbM,2025-02-13T12:43:01.73,1,0.03,0.21,1.99,0.08,,Normal,C,60,Instant,,,"Target creature gets -1/-0 until end of turn.
+<br>
+Draw a card.","<em>The first spell taught to young mages, it has spared the lives of many whose hands are too small to hold a sword.</em>"
+92922,Jeskai Elder,Jeskai Elder,https://tcgplayer-cdn.tcgplayer.com/product/92922_200w.jpg,1,1477,https://cpt.tcgcsv.com/sbM,2025-12-03T05:49:15.363,1,0.01,0.25,20.0,0.05,0.02,Normal,U,46,Creature — Human Monk,1,2,"Prowess <em>(Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)</em>
+<br>
+Whenever Jeskai Elder deals combat damage to a player, you may draw a card. If you do, discard a card.",
+92923,Island (077),Island 077,https://tcgplayer-cdn.tcgplayer.com/product/92923_200w.jpg,1,1477,https://cpt.tcgcsv.com/tbM,2024-03-13T18:25:37.237,1,0.05,0.17,3.99,0.1,,Normal,L,77,Basic Land — Island,,,,
+92924,Fleshbag Marauder,Fleshbag Marauder,https://tcgplayer-cdn.tcgplayer.com/product/92924_200w.jpg,1,1477,https://cpt.tcgcsv.com/vbM,2026-02-17T12:39:21.753,1,0.15,0.34,20.0,0.34,,Normal,U,8,Creature — Zombie Warrior,3,1,"When Fleshbag Marauder comes into play, each player sacrifices a creature.","<em>Grixis is in a world where the only things found in abundance are death and decay. Corpses, whole or in part, are the standard currency among necromancers and demons.</em>"
+92925,Island (076),Island 076,https://tcgplayer-cdn.tcgplayer.com/product/92925_200w.jpg,1,1477,https://cpt.tcgcsv.com/wbM,2024-03-13T18:25:06.893,1,0.05,0.24,7.08,0.21,0.15,Normal,L,76,Basic Land — Island,,,,
+92926,Island (075),Island 075,https://tcgplayer-cdn.tcgplayer.com/product/92926_200w.jpg,1,1477,https://cpt.tcgcsv.com/xbM,2024-03-13T17:47:41.947,1,0.06,0.27,3.99,0.3,,Normal,L,75,Basic Land — Island,,,,
+92927,Inferno Trap,Inferno Trap,https://tcgplayer-cdn.tcgplayer.com/product/92927_200w.jpg,1,1477,https://cpt.tcgcsv.com/zbM,2024-03-13T17:46:32.29,1,0.02,0.25,9.99,0.03,,Normal,U,67,Instant — Trap,,,"If you've been dealt damage by two or more creatures this turn, you may pay R rather than pay Inferno Trap's mana cost.
+<br>
+Inferno Trap deals 4 damage to target creature.","<em>""Do you smell something burning?""</em>"
+92928,Infantry Veteran,Infantry Veteran,https://tcgplayer-cdn.tcgplayer.com/product/92928_200w.jpg,1,1477,https://cpt.tcgcsv.com/BbM,2024-03-13T17:43:03.627,1,0.04,0.25,7.08,0.25,0.1,Normal,C,3,Creature — Human Soldier,1,1,T: Target attacking creature gets +1/+1 until end of turn.,"<em>""Swords, to me! We must engage their line to protect our archers and mages. Let no one fail this task!""</em>"
+92929,Impulse,Impulse,https://tcgplayer-cdn.tcgplayer.com/product/92929_200w.jpg,1,1477,https://cpt.tcgcsv.com/CbM,2026-06-08T19:39:11.14,1,0.12,0.31,2.31,0.31,0.2,Normal,C,63,Instant,,,Look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.,"<em>""You call it luck. I call it preparation.""</em>"
+92930,Hussar Patrol,Hussar Patrol,https://tcgplayer-cdn.tcgplayer.com/product/92930_200w.jpg,1,1477,https://cpt.tcgcsv.com/DbM,2024-03-13T17:36:55.68,1,0.01,0.25,1.99,0.13,,Normal,C,55,Creature — Human Knight,2,4,"Flash <em>(You may cast this spell any time you could cast an instant.)</em>
+<br>
+Vigilance","<em>""You think no one is watching, you think you're smart enough to escape, and most foolish of all, you think no one cares.""<br>—Arrester Lavinia, Tenth Precinct</em>"
+92931,Hold the Line,Hold the Line,https://tcgplayer-cdn.tcgplayer.com/product/92931_200w.jpg,1,1477,https://cpt.tcgcsv.com/FbM,2024-07-26T17:49:41.45,1,0.15,0.4,39.99,0.3,,Normal,R,66,Instant,,,Blocking creatures get +7/+7 until end of turn.,"<em>""Forgive me, Master Kami, but in the interest of my people I must halt your advance.""</em>"
+92932,Hell's Thunder,Hells Thunder,https://tcgplayer-cdn.tcgplayer.com/product/92932_200w.jpg,1,1477,https://cpt.tcgcsv.com/GbM,2024-07-26T17:49:41.513,1,0.1,0.41,39.99,0.39,,Normal,R,10,Creature — Elemental,4,4,"Flying, haste
+<br>
+At end of turn, sacrifice Hell's Thunder.
+<br>
+Unearth 4R <em>(4R: Return this card from your graveyard to play. It gains haste. Remove it from the game at end of turn or if it would leave play. Unearth only as a sorcery.)</em>",
+92933,Hellraiser Goblin,Hellraiser Goblin,https://tcgplayer-cdn.tcgplayer.com/product/92933_200w.jpg,1,1477,https://cpt.tcgcsv.com/HbM,2025-12-05T01:19:57.17,1,0.06,0.28,9.99,0.15,,Normal,U,7,Creature — Goblin Berserker,2,2,Creatures you control have haste and attack each combat if able.,"<em>Don't let him lead the soldiers, but by all means let him lead the way.</em>"
+92934,Goblin Warchief,Goblin Warchief,https://tcgplayer-cdn.tcgplayer.com/product/92934_200w.jpg,1,1477,https://cpt.tcgcsv.com/JbM,2025-12-03T05:45:34.903,1,1.55,2.83,8.76,2.92,3.12,Normal,U,9,Creature — Goblin,2,2,"Goblin spells you cast cost 1 less to cast.
+<br>
+Goblin creatures you control have haste.","<em>They poured from the Skirk Ridge like lava, burning and devouring everything in their path.</em>"
+92935,Goblin Deathraiders,Goblin Deathraiders,https://tcgplayer-cdn.tcgplayer.com/product/92935_200w.jpg,1,1477,https://cpt.tcgcsv.com/KbM,2024-03-13T17:26:43.887,1,0.05,0.28,7.3,0.13,,Normal,C,6,Creature — Goblin Warrior,3,1,Trample,"<em>Every once in a while, when they aren't getting incinerated in lava, crushed under rock slides, or devoured by dragons, goblins experience moments of unmitigated glory in battle.</em>"
+92936,Goblin Bombardment,Goblin Bombardment,https://tcgplayer-cdn.tcgplayer.com/product/92936_200w.jpg,1,1477,https://cpt.tcgcsv.com/LbM,2024-03-13T17:26:26.227,1,2.43,3.3,12.0,3.3,,Normal,U,24,Enchantment,,,Sacrifice a creature: Goblin Bombardment deals 1 damage to target creature or player.,"<em>With one motion, a pest is removed and a scourge inflicted.</em>"
+92937,Fury of the Horde,Fury of the Horde,https://tcgplayer-cdn.tcgplayer.com/product/92937_200w.jpg,1,1477,https://cpt.tcgcsv.com/MbM,2026-01-14T07:14:56.86,1,2.99,5.67,9999.99,6.27,3.99,Normal,R,30,Sorcery,,,"You may remove two red cards in your hand from the game rather than pay Fury of the Horde's mana cost.
+<br>
+Untap all creatures that attacked this turn. After this main phase, there is an additional combat phase followed by an additional main phase.",
+92938,Goblin Token,Goblin Token,https://tcgplayer-cdn.tcgplayer.com/product/92938_200w.jpg,1,1477,https://cpt.tcgcsv.com/NbM,2024-03-13T17:27:19.15,1,0.15,0.29,2.0,0.3,0.4,Normal,T,82,Token Creature — Goblin,1,1,,
+92939,Ghitu Encampment,Ghitu Encampment,https://tcgplayer-cdn.tcgplayer.com/product/92939_200w.jpg,1,1477,https://cpt.tcgcsv.com/PbM,2024-03-13T17:26:10.657,1,0.11,0.26,7.08,0.26,0.17,Normal,U,33,Land,,,"Ghitu Encampment comes into play tapped.
+<br>
+T: Add R to your mana pool.
+<br>
+1R: Ghitu Encampment becomes a 2/1 red Warrior creature with first strike until end of turn. It's still a land.",

@@ -114,7 +114,7 @@ namespace Assignment2.DataModels
 
             foreach (KeyValuePair<MagicCard, int> card in Cards)
             {
-                string text = $"{card.Key.ProductID}|{card.Key.Rarity}|{card.Key.Name}|{card.Value}";
+                string text = $"{card.Key.ProductID}|{card.Key.Rarity}|{card.Key.Name}|{card.Value}|Group: {card.Key.GroupID}";
                 FileManager.AppendToFile(path, text);
 
             }

@@ -24,32 +24,13 @@ namespace Assignment2
         public CreateDecklistMTG()
         {
             InitializeComponent();
-            Pages = new List<List<MagicCard>>();
 
-            int currentIndex = 0;
-
-
-            while (currentIndex < FileManager.MagicCards.Count)
-            {
-                if (!(currentIndex + 20 > FileManager.MagicCards.Count))
-                {
-                    List<MagicCard> page = FileManager.MagicCards.GetRange(currentIndex, 20);
-                    Pages.Add(page);
-                }
-                else
-                {
-                    List<MagicCard> page = FileManager.MagicCards.GetRange(currentIndex, FileManager.MagicCards.Count - currentIndex);
-                    Pages.Add(page);
-                }
-
-                currentIndex += 20;
-
-            }
+            Pages = Utils.ConvertToPages<MagicCard>(FileManager.MagicCards, 20);
 
             deck = new MagicDeck();
             LoadCards(Pages[pageNum - 1]);
             PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
-
+            DeckPrice.Text = "Market: $0.0";
         }
 
     
@@ -82,7 +63,7 @@ namespace Assignment2
                         cardView.QuantityNum++;
 
                         cardView.SetQuantity(cardView.QuantityNum);
-
+                        
                     }
 
 
@@ -198,12 +179,14 @@ namespace Assignment2
         {
             deck.AddCard(FileManager.MagicCardLookup[new Pair(productID, rarity)]);
             DeckCount.Text = deck.DeckCount.ToString() + "/" + "60";
+            DeckPrice.Text = "Market: $"+ Math.Round(deck.CalculateDeckPrice(), 2).ToString();
         }
 
         private void RemoveCardClick(string productID, string rarity)
         {
             deck.RemoveCard(FileManager.MagicCardLookup[new Pair(productID, rarity)]);
             DeckCount.Text = deck.DeckCount.ToString() + "/" + "60";
+            DeckPrice.Text = "Market: $" + Math.Round(deck.CalculateDeckPrice(), 2).ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)

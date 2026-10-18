@@ -13,6 +13,10 @@ namespace Assignment2
             FileManager.MagicCards = FileManager.LoadMagicCards();
 
             FileManager.MagicCardLookup = Utils.CreateMagicLookup(FileManager.MagicCards);
+
+            FileManager.PokemonCards = FileManager.LoadPokemonCards();
+
+            FileManager.PokemonCardLookup = Utils.CreatePokemonLookup(FileManager.PokemonCards);
         }
 
         private void button1_Click(object sender, EventArgs e)

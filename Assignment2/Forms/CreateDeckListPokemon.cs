@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assignment2.DataModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,6 +11,14 @@ namespace Assignment2.Forms
 {
     public partial class CreateDeckListPokemon : Form
     {
+
+        List<List<PokemonCard>> Pages;
+
+        List<List<PokemonCard>> FilteredList;
+
+        bool Filtering = false;
+        PokemonCard deck;
+        int pageNum = 1;
         public CreateDeckListPokemon()
         {
             InitializeComponent();

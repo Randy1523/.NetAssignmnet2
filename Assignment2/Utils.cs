@@ -26,6 +26,20 @@ namespace Assignment2
         
         }
 
+        public static Dictionary<Pair, PokemonCard> CreatePokemonLookup(List<PokemonCard> cards)
+        {
+
+            Dictionary<Pair, PokemonCard> LookupTable = new Dictionary<Pair, PokemonCard>();
+
+            foreach (PokemonCard card in cards)
+            {
+                LookupTable.Add(new Pair(card.ProductID, card.Foiling), card);
+            }
+
+            return LookupTable;
+
+        }
+
         public static int GenerateDeckID()
         {
 
@@ -43,7 +57,7 @@ namespace Assignment2
 
             foreach (MagicCard card in cards)
             {
-                if (card.Name.Contains(name))
+                if (card.Name.ToLower().Contains(name.ToLower()))
                 {
                     filtered.Add(card);
                 }
