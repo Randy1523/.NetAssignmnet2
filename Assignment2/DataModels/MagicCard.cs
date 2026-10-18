@@ -28,8 +28,6 @@ namespace Assignment2.DataModels
             HighPrice = high;
             Rarity = rarity;
             this.cardID = cardID;
-            //Power = power;
-            //Toughness = toughness;
 
         }
     }
