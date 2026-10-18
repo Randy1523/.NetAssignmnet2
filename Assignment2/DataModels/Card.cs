@@ -6,15 +6,15 @@ namespace Assignment2
 {
     public abstract class Card
     {
-        public string Name { get; set; }
-        public string ProductID { get; set; }
-        public string ImageURL {  get; set; }
+        public required string Name { get; set; }
+        public required string ProductID { get; set; }
+        public required string ImageURL {  get; set; }
         
         public int GroupID { get; set; }
 
         public int CategoryID { get; set; }
 
-        public string CardType { get; set; }
+        public required string CardType { get; set; }
 
         public float MarketPrice { get; set; }
 
@@ -22,7 +22,6 @@ namespace Assignment2
 
         public float HighPrice { get; set; }
 
-        public string Rarity { get; set; }
-
+        public required string Rarity { get; set; }
     }
 }

@@ -35,14 +35,26 @@ namespace Assignment2
             while (!parser.EndOfData)
             {
                 string[]? fields = parser.ReadFields();
-                if (!fields[10].Equals("") && fields != null)
+                if (fields != null && !fields[10].Equals(""))
                 {
                     if (fields[16].Equals(""))
                     {
                         fields[16] = "0";
                     }
-                    cards.Add(new MagicCard(fields[1], fields[0], fields[3], Int32.Parse(fields[5]), Int32.Parse(fields[4]),
-                                            fields[11], float.Parse(fields[16]), float.Parse(fields[13]), float.Parse(fields[15]), fields[18], fields[10]));
+                    cards.Add(new MagicCard
+                    {
+                        Name = fields[1],
+                        ProductID = fields[0],
+                        ImageURL = fields[3],
+                        GroupID = Int32.Parse(fields[5]),
+                        CategoryID = Int32.Parse(fields[4]),
+                        CardType = fields[11],
+                        MarketPrice = float.Parse(fields[16]),
+                        LowPrice = float.Parse(fields[13]),
+                        HighPrice = float.Parse(fields[15]),
+                        Rarity = fields[18],
+                        CardID = fields[10]
+                    });
 
                 }
             }
