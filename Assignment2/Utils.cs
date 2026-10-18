@@ -90,7 +90,48 @@ namespace Assignment2
 
             return filtered;
         }
-        
+
+        public static List<PokemonCard> FilterPokemonCards(List<PokemonCard> cards, string name)
+        {
+            List<PokemonCard> filtered = new List<PokemonCard>();
+
+            if (name.Equals(""))
+            {
+                return cards;
+            }
+
+            foreach (PokemonCard card in cards)
+            {
+                if (card.Name.ToLower().Contains(name.ToLower()))
+                {
+                    filtered.Add(card);
+                }
+            }
+
+            return filtered;
+        }
+
+        public static List<PokemonCard> FilterPokemonType(List<PokemonCard> cards, string type)
+        {
+            List<PokemonCard> filtered = new List<PokemonCard>();
+
+            if (type.Equals(""))
+            {
+                return cards;
+            }
+
+            foreach (PokemonCard card in cards)
+            {
+                if (card.CardType.Contains(type))
+                {
+                    filtered.Add(card);
+                }
+            }
+
+            return filtered;
+        }
+
+
         //Generic Function to convert lists into a list of a segmented lists.
         public static List<List<T>> ConvertToPages<T>(List<T> list, int pageSize)
         {
@@ -122,14 +163,14 @@ namespace Assignment2
     //Pair to have a pair of items.
     public struct Pair
     {
-        public string X { get;}
-        public string Y { get;}
+        public string ProductID { get;}
+        public string Rarity { get;}
 
         public Pair(string x, string y)
         {
-            X = x;
+            ProductID = x;
 
-            Y = y;
+            Rarity = y;
         }
     }
 }

@@ -35,7 +35,7 @@ namespace Assignment2.Forms
 
         }
 
-
+        //set's the details of the card based on a card.
         public void setDetails(Card card)
         {
             //Load image asynchronously
@@ -63,13 +63,17 @@ namespace Assignment2.Forms
         }
 
         
-
+        //Manual setting of properties in the case that it needs to be changed (E.g Pokemon's Foiling)
         public void SetQuantity(int quantity)
         { 
             QuantityNum = quantity;
             Quantity.Text = QuantityNum.ToString();
         }
 
-        
+        public void SetRarity(string rarity)
+        {
+            Rarity.Text = rarity;
+            RarityString = rarity;
+        }
     }
 }

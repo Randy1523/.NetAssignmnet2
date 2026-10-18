@@ -28,30 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            SearchButton = new Button();
             NextButton = new Button();
             BackButton = new Button();
             PageCount = new Label();
             DeckCount = new Label();
             SaveButton = new Button();
             CardContainer = new FlowLayoutPanel();
-            comboBox1 = new ComboBox();
+            CardTypes = new ComboBox();
             label4 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
+            SearchBox = new TextBox();
             label2 = new Label();
             label1 = new Label();
+            DeckPrice = new Label();
             SuspendLayout();
             // 
-            // button1
+            // SearchButton
             // 
-            button1.Font = new Font("Segoe UI", 10F);
-            button1.Location = new Point(319, 60);
-            button1.Name = "button1";
-            button1.Size = new Size(43, 25);
-            button1.TabIndex = 30;
-            button1.Text = "Go";
-            button1.UseVisualStyleBackColor = true;
+            SearchButton.Font = new Font("Segoe UI", 10F);
+            SearchButton.Location = new Point(319, 60);
+            SearchButton.Name = "SearchButton";
+            SearchButton.Size = new Size(43, 25);
+            SearchButton.TabIndex = 30;
+            SearchButton.Text = "Go";
+            SearchButton.UseVisualStyleBackColor = true;
+            SearchButton.Click += SearchButton_Click;
             // 
             // NextButton
             // 
@@ -63,6 +65,7 @@
             NextButton.TabIndex = 29;
             NextButton.Text = ">";
             NextButton.UseVisualStyleBackColor = false;
+            NextButton.Click += NextButton_Click;
             // 
             // BackButton
             // 
@@ -74,6 +77,7 @@
             BackButton.TabIndex = 28;
             BackButton.Text = "<";
             BackButton.UseVisualStyleBackColor = false;
+            BackButton.Click += BackButton_Click;
             // 
             // PageCount
             // 
@@ -91,7 +95,7 @@
             DeckCount.AutoSize = true;
             DeckCount.FlatStyle = FlatStyle.Flat;
             DeckCount.Font = new Font("Segoe UI", 28F);
-            DeckCount.Location = new Point(1207, 852);
+            DeckCount.Location = new Point(225, 867);
             DeckCount.Name = "DeckCount";
             DeckCount.Size = new Size(97, 51);
             DeckCount.TabIndex = 26;
@@ -106,6 +110,7 @@
             SaveButton.TabIndex = 25;
             SaveButton.Text = "Save Deck";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // CardContainer
             // 
@@ -115,14 +120,14 @@
             CardContainer.Size = new Size(1295, 665);
             CardContainer.TabIndex = 24;
             // 
-            // comboBox1
+            // CardTypes
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Land", "Creature", "Aritfact", "Enchantment", "Planeswalker", "Battle", "Instant", "Sorcery" });
-            comboBox1.Location = new Point(60, 123);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 23;
+            CardTypes.FormattingEnabled = true;
+            CardTypes.Items.AddRange(new object[] { "", "Grass", "Fire", "Water", "Lightning", "Psychic", "Fighting", "Darkness", "Metal", "Dragon", "Colorless", "Fairy", "Item", "Supporter", "Stadium", "ACE SPEC", "Energy" });
+            CardTypes.Location = new Point(60, 123);
+            CardTypes.Name = "CardTypes";
+            CardTypes.Size = new Size(121, 23);
+            CardTypes.TabIndex = 23;
             // 
             // label4
             // 
@@ -144,14 +149,14 @@
             label3.TabIndex = 21;
             label3.Text = "Filters";
             // 
-            // textBox1
+            // SearchBox
             // 
-            textBox1.Location = new Point(75, 62);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(238, 23);
-            textBox1.TabIndex = 20;
-            textBox1.UseWaitCursor = true;
-            textBox1.WordWrap = false;
+            SearchBox.Location = new Point(75, 62);
+            SearchBox.Name = "SearchBox";
+            SearchBox.Size = new Size(238, 23);
+            SearchBox.TabIndex = 20;
+            SearchBox.UseWaitCursor = true;
+            SearchBox.WordWrap = false;
             // 
             // label2
             // 
@@ -173,22 +178,35 @@
             label1.TabIndex = 18;
             label1.Text = "Search:";
             // 
+            // DeckPrice
+            // 
+            DeckPrice.AutoSize = true;
+            DeckPrice.FlatStyle = FlatStyle.Flat;
+            DeckPrice.Font = new Font("Segoe UI", 28F);
+            DeckPrice.Location = new Point(987, 867);
+            DeckPrice.Name = "DeckPrice";
+            DeckPrice.RightToLeft = RightToLeft.Yes;
+            DeckPrice.Size = new Size(226, 51);
+            DeckPrice.TabIndex = 31;
+            DeckPrice.Text = "Market: $0.0";
+            // 
             // CreateDeckListPokemon
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1312, 940);
-            Controls.Add(button1);
+            Controls.Add(DeckPrice);
+            Controls.Add(SearchButton);
             Controls.Add(NextButton);
             Controls.Add(BackButton);
             Controls.Add(PageCount);
             Controls.Add(DeckCount);
             Controls.Add(SaveButton);
             Controls.Add(CardContainer);
-            Controls.Add(comboBox1);
+            Controls.Add(CardTypes);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(SearchBox);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "CreateDeckListPokemon";
@@ -199,18 +217,19 @@
 
         #endregion
 
-        private Button button1;
+        private Button SearchButton;
         private Button NextButton;
         private Button BackButton;
         private Label PageCount;
         private Label DeckCount;
         private Button SaveButton;
         private FlowLayoutPanel CardContainer;
-        private ComboBox comboBox1;
+        private ComboBox CardTypes;
         private Label label4;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox SearchBox;
         private Label label2;
         private Label label1;
+        private Label DeckPrice;
     }
 }

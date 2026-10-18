@@ -9,7 +9,7 @@ namespace Assignment2.DataModels
         public string? Stage {get;set;}
 
         public string Foiling { get;set;}
-        public string CardID {get;set;}
+        public required string  CardID {get;set;}
 
     }
 }
