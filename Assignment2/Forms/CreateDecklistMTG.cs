@@ -121,6 +121,7 @@ namespace Assignment2
             }
         }
 
+        //Save the deck on click.
         private void SaveButton_Click(object sender, EventArgs e)
         {
             deck.SaveDeckList();
@@ -155,6 +156,7 @@ namespace Assignment2
 
         }
 
+        //Navigate to the prev page
         private void BackButton_Click(object sender, EventArgs e)
         {
             if (pageNum > 1)
@@ -175,6 +177,8 @@ namespace Assignment2
             }
         }
 
+
+        //Functions to add new and remove cards from the deck and update details accordingly
         private void AddCardClick(string productID, string rarity)
         {
             deck.AddCard(FileManager.MagicCardLookup[new Pair(productID, rarity)]);

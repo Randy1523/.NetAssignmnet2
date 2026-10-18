@@ -17,13 +17,6 @@ namespace Assignment2.DataModels
             deckID = Utils.GenerateDeckID();
         }
 
-        public string PrintDeckList() {
-            
-            
-            
-            return "";
-        }
-
         //Caculates deck price
         public float CalculateDeckPrice() {
 

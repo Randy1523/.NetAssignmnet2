@@ -13,6 +13,8 @@ namespace Assignment2
 
         private static readonly Random rnd = new Random();
 
+        //These functions are used to create dictionaries to easier search cards by their product ID and rarity. They're pairs because
+        //many cards share the same product id with differing rarity/foiling
         public static Dictionary<Pair, MagicCard> CreateMagicLookup(List<MagicCard> cards){
 
             Dictionary<Pair, MagicCard> LookupTable = new Dictionary<Pair, MagicCard>();
@@ -40,12 +42,14 @@ namespace Assignment2
 
         }
 
+        //RNG for deck codes
         public static int GenerateDeckID()
         {
 
             return rnd.Next(1,99999);
         }
 
+        //Name filtering function
         public static List<MagicCard> FilterMagicCards(List<MagicCard> cards, string name) 
         {
             List<MagicCard> filtered = new List<MagicCard>();
@@ -66,6 +70,7 @@ namespace Assignment2
             return filtered;
         }
 
+        //Function to filter for types in magic
         public static List<MagicCard> FilterMagicType(List<MagicCard> cards, string type)
         {
             List<MagicCard> filtered = new List<MagicCard>();

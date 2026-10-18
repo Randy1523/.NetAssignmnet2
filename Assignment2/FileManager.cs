@@ -19,7 +19,7 @@ namespace Assignment2
 
         public static Dictionary<Pair, PokemonCard> PokemonCardLookup;
 
-        //Test Function to test loading of cards.
+        //Function to load all magic cards from downloaded CSVs
         public static List<MagicCard> LoadMagicCards()
         {
             List<MagicCard> cards = new List<MagicCard>();
@@ -59,9 +59,20 @@ namespace Assignment2
                             {
                                 fields[fieldNum7] = "0";
                             }
-                            cards.Add(new MagicCard(fields[fieldNum1], fields[fieldNum2], fields[fieldNum3], Int32.Parse(fields[fieldNum4]), Int32.Parse(fields[fieldNum5]),
-                                                    fields[fieldNum6], float.Parse(fields[fieldNum7]), float.Parse(fields[fieldNum8]), float.Parse(fields[fieldNum9]),
-                                                    fields[fieldNum10], fields[fieldNum11]));
+                            cards.Add(new MagicCard
+                            {
+                                Name = fields[fieldNum1],
+                                ProductID = fields[fieldNum2],
+                                ImageURL = fields[fieldNum3],
+                                GroupID = Int32.Parse(fields[fieldNum4]),
+                                CategoryID = Int32.Parse(fields[fieldNum5]),
+                                CardType = fields[fieldNum6],
+                                MarketPrice = float.Parse(fields[fieldNum7]),
+                                LowPrice = float.Parse(fields[fieldNum8]),
+                                HighPrice = float.Parse(fields[fieldNum9]),
+                                Rarity = fields[fieldNum10],
+                                CardID = fields[fieldNum11]
+                            });
 
                         }
                     }
@@ -94,7 +105,7 @@ namespace Assignment2
                 int fieldNum3 = headers.IndexOf("imageUrl");
                 int fieldNum4 = headers.IndexOf("groupId");
                 int fieldNum5 = headers.IndexOf("categoryId");
-                int fieldNum6 = headers.IndexOf("extSubType");
+                int fieldNum6 = headers.IndexOf("extCardType");
                 int fieldNum7 = headers.IndexOf("marketPrice");
                 int fieldNum8 = headers.IndexOf("lowPrice");
                 int fieldNum9 = headers.IndexOf("highPrice");
@@ -115,15 +126,41 @@ namespace Assignment2
                                 fields[fieldNum7] = "0";
                             }
                             if (!fields[fieldNum13].Equals("")) { 
-                                cards.Add(new PokemonCard(fields[fieldNum1], fields[fieldNum2], fields[fieldNum3], Int32.Parse(fields[fieldNum4]), Int32.Parse(fields[fieldNum5]),
-                                                        fields[fieldNum6], float.Parse(fields[fieldNum7]), float.Parse(fields[fieldNum8]), float.Parse(fields[fieldNum9]),
-                                                        fields[fieldNum10], fields[fieldNum11], fields[fieldNum12]));
+                                cards.Add(new PokemonCard 
+                                {
+                                    Name = fields[fieldNum1],
+                                    ProductID = fields[fieldNum2],
+                                    ImageURL = fields[fieldNum3],
+                                    GroupID = Int32.Parse(fields[fieldNum4]),
+                                    CategoryID = Int32.Parse(fields[fieldNum5]),
+                                    CardType = fields[fieldNum6],
+                                    MarketPrice = float.Parse(fields[fieldNum7]),
+                                    LowPrice = float.Parse(fields[fieldNum8]),
+                                    HighPrice = float.Parse(fields[fieldNum9]),
+                                    Foiling = fields[fieldNum10],
+                                    CardID = fields[fieldNum11],
+                                    Rarity = fields[fieldNum10],
+
+                                });
                             }
                             else
                             {
-                                cards.Add(new PokemonCard(fields[fieldNum1], fields[fieldNum2], fields[fieldNum3], Int32.Parse(fields[fieldNum4]), Int32.Parse(fields[fieldNum5]),
-                                                        fields[fieldNum6], float.Parse(fields[fieldNum7]), float.Parse(fields[fieldNum8]), float.Parse(fields[fieldNum9]),
-                                                        fields[fieldNum10], fields[fieldNum11], fields[fieldNum12], fields[fieldNum13]));
+                                cards.Add(new PokemonCard 
+                                {
+                                    Name = fields[fieldNum1],
+                                    ProductID = fields[fieldNum2],
+                                    ImageURL = fields[fieldNum3],
+                                    GroupID = Int32.Parse(fields[fieldNum4]),
+                                    CategoryID = Int32.Parse(fields[fieldNum5]),
+                                    CardType = fields[fieldNum6],
+                                    MarketPrice = float.Parse(fields[fieldNum7]),
+                                    LowPrice = float.Parse(fields[fieldNum8]),
+                                    HighPrice = float.Parse(fields[fieldNum9]),
+                                    Foiling = fields[fieldNum10],
+                                    CardID = fields[fieldNum11],
+                                    Rarity = fields[fieldNum12],
+                                    Stage = fields[fieldNum13]
+                                });
                             }
 
                         }

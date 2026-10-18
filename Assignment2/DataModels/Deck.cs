@@ -6,7 +6,6 @@ namespace Assignment2
 {
     public interface Deck
     {
-        public string PrintDeckList();
 
         public float CalculateDeckPrice();
 
@@ -18,12 +17,5 @@ namespace Assignment2
         public void SaveDeckList();
 
 
-    }
-
-    //Struct to pair a card and their associate amount T made generic so it can work as a pair of anything and an associated count
-    public struct Count<T>
-    {
-        T card;
-        int count;
     }
 }

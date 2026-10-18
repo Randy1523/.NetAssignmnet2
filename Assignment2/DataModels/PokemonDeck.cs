@@ -20,11 +20,7 @@ namespace Assignment2.DataModels
 
         }
 
-        public string PrintDeckList()
-        {
-            return "";
-        }
-
+        //All WIP
         public float CalculateDeckPrice()
         {
             return 0;

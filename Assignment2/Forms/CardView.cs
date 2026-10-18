@@ -12,13 +12,11 @@ namespace Assignment2.Forms
     {
         public string ImageURL = "n/a";
 
-        public string Name = "Name";
+        public string CardNameString = "Name";
 
         public event EventHandler AddClicked;
 
         public event EventHandler RemoveClicked;
-
-        public event EventHandler QuantityChanged;
 
         public string productID = "0";
 
@@ -34,7 +32,6 @@ namespace Assignment2.Forms
             //Create new event handlers to let the class raise it's own event and attach them to the Click delegate
             addCard.Click += (s, e) => AddClicked?.Invoke(this, e);
             removeCard.Click += (s, e) => RemoveClicked?.Invoke(this, e);
-            Quantity.TextChanged += (s, e) => QuantityChanged?.Invoke(this, e);
 
         }
 
@@ -45,9 +42,9 @@ namespace Assignment2.Forms
             ImageURL = card.ImageURL;
             pictureBox1.LoadAsync(ImageURL);
 
-            Name = card.Name;
+            CardNameString = card.Name;
 
-            CardName.Text = Name;
+            CardName.Text = CardNameString;
 
             productID = card.ProductID;
 
