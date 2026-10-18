@@ -30,10 +30,10 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
+            SearchBox = new TextBox();
             label3 = new Label();
             label4 = new Label();
-            comboBox1 = new ComboBox();
+            CardTypes = new ComboBox();
             CardContainer = new FlowLayoutPanel();
             SaveButton = new Button();
             DeckCount = new Label();
@@ -63,14 +63,14 @@
             label2.TabIndex = 1;
             label2.Text = "Build your MTG Deck";
             // 
-            // textBox1
+            // SearchBox
             // 
-            textBox1.Location = new Point(76, 66);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(238, 23);
-            textBox1.TabIndex = 2;
-            textBox1.UseWaitCursor = true;
-            textBox1.WordWrap = false;
+            SearchBox.Location = new Point(76, 66);
+            SearchBox.Name = "SearchBox";
+            SearchBox.Size = new Size(238, 23);
+            SearchBox.TabIndex = 2;
+            SearchBox.UseWaitCursor = true;
+            SearchBox.WordWrap = false;
             // 
             // label3
             // 
@@ -92,14 +92,15 @@
             label4.TabIndex = 4;
             label4.Text = "Type";
             // 
-            // comboBox1
+            // CardTypes
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Land", "Creature", "Aritfact", "Enchantment", "Planeswalker", "Battle", "Instant", "Sorcery" });
-            comboBox1.Location = new Point(61, 127);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 5;
+            CardTypes.FormattingEnabled = true;
+            CardTypes.Items.AddRange(new object[] { "Land", "Creature", "Aritfact", "Enchantment", "Planeswalker", "Battle", "Instant", "Sorcery" });
+            CardTypes.Location = new Point(61, 127);
+            CardTypes.Name = "CardTypes";
+            CardTypes.RightToLeft = RightToLeft.No;
+            CardTypes.Size = new Size(121, 23);
+            CardTypes.TabIndex = 5;
             // 
             // CardContainer
             // 
@@ -175,6 +176,7 @@
             button1.TabIndex = 17;
             button1.Text = "Go";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // CreateDecklistMTG
             // 
@@ -188,10 +190,10 @@
             Controls.Add(DeckCount);
             Controls.Add(SaveButton);
             Controls.Add(CardContainer);
-            Controls.Add(comboBox1);
+            Controls.Add(CardTypes);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(SearchBox);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "CreateDecklistMTG";
@@ -204,10 +206,10 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox SearchBox;
         private Label label3;
         private Label label4;
-        private ComboBox comboBox1;
+        private ComboBox CardTypes;
         private FlowLayoutPanel CardContainer;
         private Button SaveButton;
         private Label DeckCount;

@@ -37,6 +37,7 @@
             // 
             // CreateDecklist
             // 
+            CreateDecklist.BackgroundImageLayout = ImageLayout.None;
             CreateDecklist.Location = new Point(49, 109);
             CreateDecklist.Name = "CreateDecklist";
             CreateDecklist.Size = new Size(267, 70);
