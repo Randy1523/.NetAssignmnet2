@@ -115,6 +115,7 @@ namespace Assignment2
                 Filtering = false;
                 pageNum = 1;
                 LoadCards(Pages[pageNum - 1]);
+                PageCount.Text = pageNum.ToString()+"/"+Pages.Count;
             }
             else
             {
@@ -124,8 +125,18 @@ namespace Assignment2
                 List<MagicCard> filtered2 = Utils.FilterMagicType(filtered, CardTypes.Text);
 
                 FilteredList = Utils.ConvertToPages<MagicCard>(filtered2,20);
+                if(FilteredList.Count > 0)
+                {
+                    LoadCards(FilteredList[pageNum - 1]);
+                    PageCount.Text = pageNum.ToString() + "/" + FilteredList.Count;
+                }
+                else
+                {
+                    FilteredList.Add(new List<MagicCard>());
+                    LoadCards(FilteredList[pageNum - 1]);
+                    PageCount.Text = "0/0";
+                }
                 
-                LoadCards(FilteredList[pageNum - 1]);
             }
         }
 
@@ -139,15 +150,26 @@ namespace Assignment2
         {
             if (!Filtering)
             {
-                pageNum++;
-                LoadCards(Pages[pageNum - 1]);
-                PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
+                if(pageNum < Pages.Count)
+                {
+                    pageNum++;
+                    LoadCards(Pages[pageNum - 1]);
+                    PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
+
+                }
+                
             }
             else
             {
-                pageNum++;
-                LoadCards(FilteredList[pageNum - 1]);
-                PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
+                if(pageNum < FilteredList.Count) {
+                
+                
+                    pageNum++;
+                    LoadCards(FilteredList[pageNum - 1]);
+                    PageCount.Text = pageNum.ToString() + "/" + FilteredList.Count.ToString();
+                
+                }
+                    
             }
 
         }
@@ -166,7 +188,7 @@ namespace Assignment2
                 {
                     pageNum--;
                     LoadCards(FilteredList[pageNum - 1]);
-                    PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
+                    PageCount.Text = pageNum.ToString() + "/" + FilteredList.Count.ToString();
                 }
                 
             }

@@ -43,7 +43,7 @@ namespace Assignment2
 
             foreach (MagicCard card in cards)
             {
-                if (card.CardType.Contains(name))
+                if (card.Name.Contains(name))
                 {
                     filtered.Add(card);
                 }
