@@ -6,9 +6,7 @@ namespace Assignment2.DataModels
 {
     public class MagicCard : Card
     {
-
-
-        public string cardID { get; set; }
+        public required string CardID { get; set; }
 
         //public int Power { get; set; }
 
