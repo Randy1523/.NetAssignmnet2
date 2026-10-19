@@ -47,7 +47,7 @@ namespace Assignment2.Forms
 
             CardName.Text = CardNameString;
 
-            productID = card.ProductID;
+            productID = card.ProductID.ToString();
 
             RarityString = card.Rarity;
 

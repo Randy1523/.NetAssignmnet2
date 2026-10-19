@@ -17,7 +17,7 @@ namespace Assignment2
         {
             InitializeComponent();
 
-            Pages = Utils.ConvertToPages<MagicCard>(MagicCard.Cards.List, 20);
+            Pages = Utils.ConvertToPages(MagicCard.Cards.List, 20);
 
             deck = new MagicDeck();
             LoadCards(Pages[pageNum - 1]);
@@ -29,7 +29,7 @@ namespace Assignment2
         {
             InitializeComponent();
 
-            Pages = Utils.ConvertToPages<MagicCard>(MagicCard.Cards.List, 20);
+            Pages = Utils.ConvertToPages(MagicCard.Cards.List, 20);
 
             this.deck = deck;
             LoadCards(Pages[pageNum - 1]);
@@ -98,7 +98,7 @@ namespace Assignment2
                 List<MagicCard> filtered = Utils.FilterMagicCards(MagicCard.Cards.List, SearchBox.Text);
                 List<MagicCard> filtered2 = Utils.FilterMagicType(filtered, CardTypes.Text);
 
-                FilteredList = Utils.ConvertToPages<MagicCard>(filtered2, 20);
+                FilteredList = Utils.ConvertToPages(filtered2, 20);
                 if (FilteredList.Count > 0)
                 {
                     LoadCards(FilteredList[pageNum - 1]);

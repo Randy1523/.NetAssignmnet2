@@ -1,18 +1,16 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace Assignment2.DataModels
+﻿namespace Assignment2.DataModels
 {
     public class MagicCard : Card
     {
         public static MagicCardList Cards { get; } = new();
 
-        public int CardNumber { get; }
+        public string CardNumber { get; init; }
 
         public MagicCard(Dictionary<string, string> data) : base(data)
         {
             CardType = data["extSubType"];
             Rarity = data["subTypeName"];
-            CardNumber = int.Parse(data["extNumber"]);
+            CardNumber = data["extNumber"];
         }
     }
 

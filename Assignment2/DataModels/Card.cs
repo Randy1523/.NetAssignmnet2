@@ -1,19 +1,17 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace Assignment2.DataModels
+﻿namespace Assignment2.DataModels
 {
     public abstract class Card
     {
-        public int ProductID { get; }
-        public int GroupID { get; }
-        public int CategoryID { get; }
+        public int ProductID { get; init; }
+        public int GroupID { get; init; }
+        public int CategoryID { get; init; }
         public string Name { get; init; }
         public string ImageURL { get; init; }
         public string CardType { get; init; }
         public string Rarity { get; init; }
-        public float MarketPrice { get; }
-        public float LowPrice { get; }
-        public float HighPrice { get; }
+        public float MarketPrice { get; init; }
+        public float LowPrice { get; init; }
+        public float HighPrice { get; init; }
 
         public Card(Dictionary<string, string> data)
         {
