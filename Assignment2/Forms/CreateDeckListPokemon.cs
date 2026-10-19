@@ -31,6 +31,17 @@ namespace Assignment2.Forms
             DeckPrice.Text = "Market: $0.0";
         }
 
+        public CreateDeckListPokemon(PokemonDeck deck)
+        {
+            InitializeComponent();
+
+            Pages = Utils.ConvertToPages<PokemonCard>(FileManager.PokemonCards, 20);
+
+            this.deck = deck;
+            LoadCards(Pages[pageNum - 1]);
+            PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
+            DeckPrice.Text = $"Market: ${deck.CalculateDeckPrice}";
+        }
         private void LoadCards(List<PokemonCard> cards)
         {
             CardContainer.Controls.Clear();

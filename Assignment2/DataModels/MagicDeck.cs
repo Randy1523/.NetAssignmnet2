@@ -31,7 +31,45 @@ namespace Assignment2.DataModels
 
             foreach(KeyValuePair<MagicCard, int> card in Cards)
             {
-                price += card.Key.MarketPrice * card.Value;
+                if(card.Key.MarketPrice > 0)
+                {
+                    price += card.Key.MarketPrice * card.Value;
+                }
+                else
+                {
+                    price += card.Key.LowPrice * card.Value;
+                }
+                
+
+            }
+
+            return price;
+        }
+
+        public float CalculateDeckPriceLow()
+        {
+
+            float price = 0;
+
+            foreach (KeyValuePair<MagicCard, int> card in Cards)
+            {
+                
+                 price += card.Key.LowPrice * card.Value;
+               
+            }
+
+            return price;
+        }
+
+        public float CalculateDeckPriceHigh()
+        {
+
+            float price = 0;
+
+            foreach (KeyValuePair<MagicCard, int> card in Cards)
+            {
+
+                price += card.Key.HighPrice * card.Value;
 
             }
 
@@ -45,7 +83,23 @@ namespace Assignment2.DataModels
         }
 
         //To return stats of deck such as colour or type distributions and so on
-        public void ReturnDeckStats() { 
+        public Dictionary<string, int> ReturnDeckStats() { 
+            Dictionary<string, int> stats = new Dictionary<string, int>();
+            
+            foreach(KeyValuePair<MagicCard,int> card in Cards)
+            {
+                if (!stats.Keys.Contains(card.Key.CardType))
+                {
+                    stats.Add(card.Key.CardType, card.Value);
+                }
+                else
+                {
+                    stats[card.Key.CardType] += card.Value;
+                }
+            }
+
+            return stats;
+
         }
 
         //Fucntions to add and remove cards.

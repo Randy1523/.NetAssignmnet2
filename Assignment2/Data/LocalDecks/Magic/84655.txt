@@ -1,0 +1,8 @@
+84655
+15023|Foil|Abundance|1|Group: 1
+15029|Foil|Air Elemental|1|Group: 1
+15032|Normal|Ancestor's Chosen|2|Group: 1
+15031|Foil|Anaba Bodyguard|1|Group: 1
+15034|Normal|Angel's Feather|1|Group: 1
+15034|Foil|Angel's Feather|1|Group: 1
+15035|Normal|Angelic Blessing|3|Group: 1

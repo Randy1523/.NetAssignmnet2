@@ -46,7 +46,7 @@
             // 
             DeckName.AutoSize = true;
             DeckName.Font = new Font("Segoe UI", 12F);
-            DeckName.Location = new Point(3, 267);
+            DeckName.Location = new Point(13, 267);
             DeckName.Name = "DeckName";
             DeckName.Size = new Size(49, 21);
             DeckName.TabIndex = 1;

@@ -42,7 +42,7 @@ namespace Assignment2
             this.deck = deck;
             LoadCards(Pages[pageNum - 1]);
             PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
-            DeckPrice.Text = "Market: $0.0";
+            DeckPrice.Text = $"Market: ${deck.CalculateDeckPrice}";
         }
 
 

@@ -24,28 +24,94 @@ namespace Assignment2.DataModels
             deckID = Utils.GenerateDeckID();
         }
 
-        //All WIP
+       
         public float CalculateDeckPrice()
         {
             float price = 0;
 
             foreach (KeyValuePair<PokemonCard, int> card in Cards)
             {
-                price += card.Key.MarketPrice * card.Value;
+                if (card.Key.MarketPrice > 0)
+                {
+                    price += card.Key.MarketPrice * card.Value;
+                }
+                else
+                {
+                    price += card.Key.LowPrice * card.Value;
+                }
 
             }
 
             return price;
         }
 
+        public float CalculateDeckPriceLow()
+        {
+
+            float price = 0;
+
+            foreach (KeyValuePair<PokemonCard, int> card in Cards)
+            {
+
+                price += card.Key.LowPrice * card.Value;
+
+            }
+
+            return price;
+        }
+
+        public float CalculateDeckPriceHigh()
+        {
+
+            float price = 0;
+
+            foreach (KeyValuePair<PokemonCard, int> card in Cards)
+            {
+
+                price += card.Key.HighPrice * card.Value;
+
+            }
+
+            return price;
+        }
+
+        //Not sure if we're gonna have time to implement this
         public bool CheckDeck()
         {
             return false;
         }
 
-        public void ReturnDeckStats()
-        {
 
+        
+        public Dictionary<string,int> ReturnDeckStats()
+        {
+            Dictionary<string, int> stats = new Dictionary<string, int>();
+
+            foreach (KeyValuePair<PokemonCard, int> card in Cards)
+            {
+                if (!stats.Keys.Contains(card.Key.CardType))
+                {
+                    stats.Add(card.Key.CardType, card.Value);
+                }
+                else
+                {
+                    stats[card.Key.CardType] += card.Value;
+                }
+
+                if(card.Key.Stage != null && !card.Key.Stage.Equals(""))
+                {
+                    if (!stats.Keys.Contains(card.Key.Stage))
+                    {
+                        stats.Add(card.Key.Stage, card.Value);
+                    }
+                    else
+                    {
+                        stats[card.Key.Stage] += card.Value;
+                    }
+                }
+            }
+
+            return stats;
         }
 
         public void SaveDeckList()

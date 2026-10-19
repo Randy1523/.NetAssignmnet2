@@ -60,7 +60,7 @@
             CardRarity.Anchor = AnchorStyles.Top;
             CardRarity.AutoSize = true;
             CardRarity.Font = new Font("Segoe UI", 12F);
-            CardRarity.Location = new Point(3, 279);
+            CardRarity.Location = new Point(9, 279);
             CardRarity.Name = "CardRarity";
             CardRarity.Size = new Size(51, 21);
             CardRarity.TabIndex = 2;
@@ -72,7 +72,7 @@
             MarketPrice.Anchor = AnchorStyles.Top;
             MarketPrice.AutoSize = true;
             MarketPrice.Font = new Font("Segoe UI", 12F);
-            MarketPrice.Location = new Point(3, 258);
+            MarketPrice.Location = new Point(9, 258);
             MarketPrice.Name = "MarketPrice";
             MarketPrice.Size = new Size(59, 21);
             MarketPrice.TabIndex = 3;
@@ -84,7 +84,7 @@
             CardName.Anchor = AnchorStyles.Top;
             CardName.AutoSize = true;
             CardName.Font = new Font("Segoe UI", 10F);
-            CardName.Location = new Point(3, 239);
+            CardName.Location = new Point(9, 239);
             CardName.Name = "CardName";
             CardName.Size = new Size(45, 19);
             CardName.TabIndex = 4;

@@ -18,6 +18,12 @@ namespace Assignment2.Forms
             Deck = deck;
 
             LoadCards(Deck);
+
+            DeckCount.Text = Deck.DeckCount.ToString() + "/60";
+
+            MarketPrice.Text = $"Market: ${Math.Round(Deck.CalculateDeckPrice(), 2)}";
+            HighPrice.Text = $"High: ${Math.Round(Deck.CalculateDeckPriceHigh(),2)}";
+            LowPrice.Text = $"Low: ${Math.Round(Deck.CalculateDeckPriceLow(), 2)}";
         }
 
         //WIP
@@ -41,6 +47,20 @@ namespace Assignment2.Forms
             CreateDecklistMTG form = new CreateDecklistMTG(Deck);
             form.Show();
             this.Close();
+        }
+
+        private void StatsButton_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, int> stats = Deck.ReturnDeckStats();
+
+            string statsString = "";
+
+            foreach (KeyValuePair<string, int> stat in stats) 
+            {
+                statsString += $"{stat.Key}: x{stat.Value} \n";
+            }
+
+            MessageBox.Show(statsString);
         }
     }
 }
