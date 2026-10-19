@@ -83,5 +83,35 @@ namespace Assignment2
 
             return decks;
         }
+
+        public static List<PokemonDeck> LoadPokemonDecks()
+        {
+            List<PokemonDeck> decks = [];
+
+            string[] paths = Directory.GetFiles("../../../Data/LocalDecks/Pokemon/", "*.txt");
+
+            foreach (string path in paths)
+            {
+
+
+                string[] lines = File.ReadAllLines(path);
+                PokemonDeck deck = new(Int32.Parse(lines[0]));
+
+                for (int i = 1; i < lines.Length; i++)
+                {
+                    string[] split = lines[i].Split('|');
+
+                    PokemonCard card = PokemonCard.Cards.Get((int.Parse(split[0]), split[1])) ?? throw new InvalidOperationException("Card from loaded deck not found in database");
+
+                    deck.AddCard(card, Int32.Parse(split[3]));
+                }
+
+                decks.Add(deck);
+
+            }
+
+            return decks;
+        }
     }
 }
+

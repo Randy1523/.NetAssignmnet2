@@ -19,7 +19,7 @@ namespace Assignment2.Forms
 
             LoadCards(Deck);
 
-            DeckCount.Text = Deck.DeckCount.ToString() + "/60";
+            DeckCount.Text = "Card Count:" + Deck.DeckCount.ToString() + "/60";
 
             MarketPrice.Text = $"Market: ${Math.Round(Deck.CalculateDeckPrice(), 2)}";
             HighPrice.Text = $"High: ${Math.Round(Deck.CalculateDeckPriceHigh(),2)}";

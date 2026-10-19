@@ -25,7 +25,9 @@ namespace Assignment2
 
         private void selectPokemon_Click(object sender, EventArgs e)
         {
-
+            PokemonDecklists form = new PokemonDecklists();
+            form.Show();
+            this.Close();
         }
     }
 }

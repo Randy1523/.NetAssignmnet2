@@ -1,0 +1,3 @@
+76458
+42347|Holofoil|Mewtwo|3|Group: 604
+42348|Normal|Lightning Energy|2|Group: 604

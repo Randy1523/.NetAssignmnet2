@@ -33,7 +33,8 @@ namespace Assignment2.Forms
             this.deck = deck;
             LoadCards(Pages[pageNum - 1]);
             PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
-            DeckPrice.Text = $"Market: ${deck.CalculateDeckPrice}";
+            DeckPrice.Text = $"Market: ${Math.Round(deck.CalculateDeckPrice(),2)}";
+            DeckCount.Text = $"{deck.DeckCount}/60";
         }
         private void LoadCards(List<PokemonCard> cards)
         {

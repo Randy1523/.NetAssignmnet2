@@ -120,7 +120,7 @@
 
             foreach (KeyValuePair<PokemonCard, int> card in Cards)
             {
-                string text = $"{card.Key.ProductID}|{card.Key.Rarity}|{card.Key.Name}|{card.Value}|Group: {card.Key.GroupID}";
+                string text = $"{card.Key.ProductID}|{card.Key.Foiling}|{card.Key.Name}|{card.Value}|Group: {card.Key.GroupID}";
                 FileManager.AppendToFile(path, text);
 
             }

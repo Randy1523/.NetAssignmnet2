@@ -28,12 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "PokemonDecklists";
+            DecklistPanel = new FlowLayoutPanel();
+            SuspendLayout();
+            // 
+            // DecklistPanel
+            // 
+            DecklistPanel.AutoScroll = true;
+            DecklistPanel.Location = new Point(12, 12);
+            DecklistPanel.Name = "DecklistPanel";
+            DecklistPanel.Size = new Size(970, 508);
+            DecklistPanel.TabIndex = 1;
+            // 
+            // PokemonDecklists
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(995, 530);
+            Controls.Add(DecklistPanel);
+            Name = "PokemonDecklists";
+            Text = "PokemonDecklists";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private FlowLayoutPanel DecklistPanel;
     }
 }
