@@ -35,6 +35,7 @@ namespace Assignment2.Forms
             PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
             DeckPrice.Text = $"Market: ${Math.Round(deck.CalculateDeckPrice(),2)}";
             DeckCount.Text = $"{deck.DeckCount}/60";
+            DeckNameBox.Text = deck.Name;
         }
         private void LoadCards(List<PokemonCard> cards)
         {
@@ -174,8 +175,16 @@ namespace Assignment2.Forms
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            deck.SaveDeckList();
-            this.Close();
+            if (!DeckNameBox.Text.Equals(""))
+            {
+                deck.Name = DeckNameBox.Text;
+                deck.SaveDeckList();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a deck name.");
+            }
         }
     }
 }

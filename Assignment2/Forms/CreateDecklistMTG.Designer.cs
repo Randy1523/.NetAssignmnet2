@@ -42,6 +42,8 @@
             NextButton = new Button();
             button1 = new Button();
             DeckPrice = new Label();
+            DeckNameBox = new TextBox();
+            DeckNameLabel = new Label();
             SuspendLayout();
             // 
             // label1
@@ -191,11 +193,30 @@
             DeckPrice.TabIndex = 18;
             DeckPrice.Text = "Market: $0.0";
             // 
+            // DeckNameBox
+            // 
+            DeckNameBox.Location = new Point(1094, 132);
+            DeckNameBox.Name = "DeckNameBox";
+            DeckNameBox.Size = new Size(211, 23);
+            DeckNameBox.TabIndex = 19;
+            // 
+            // DeckNameLabel
+            // 
+            DeckNameLabel.AutoSize = true;
+            DeckNameLabel.Font = new Font("Segoe UI", 11F);
+            DeckNameLabel.Location = new Point(999, 135);
+            DeckNameLabel.Name = "DeckNameLabel";
+            DeckNameLabel.Size = new Size(89, 20);
+            DeckNameLabel.TabIndex = 20;
+            DeckNameLabel.Text = "Deck Name:";
+            // 
             // CreateDecklistMTG
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1317, 945);
+            Controls.Add(DeckNameLabel);
+            Controls.Add(DeckNameBox);
             Controls.Add(DeckPrice);
             Controls.Add(button1);
             Controls.Add(NextButton);
@@ -232,5 +253,7 @@
         private Button NextButton;
         private Button button1;
         private Label DeckPrice;
+        private TextBox DeckNameBox;
+        private Label DeckNameLabel;
     }
 }

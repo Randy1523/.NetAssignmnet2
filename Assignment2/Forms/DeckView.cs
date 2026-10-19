@@ -10,7 +10,7 @@ namespace Assignment2.Forms
 {
     public partial class DeckView : UserControl
     {
-        public int DeckCode = 0;
+        public string DeckCode = "N/A";
 
         public event EventHandler DoubleClicked;
         public DeckView()
@@ -22,10 +22,10 @@ namespace Assignment2.Forms
             DeckImage.WaitOnLoad = false;
         }
 
-        public void SetDeckCode(int code)
+        public void SetDeckCode(string code)
         {
             DeckCode = code;
-            DeckName.Text = code.ToString();
+            DeckName.Text = code;
         }
 
         public void setImage(string url)

@@ -42,6 +42,8 @@
             label2 = new Label();
             label1 = new Label();
             DeckPrice = new Label();
+            DeckNameLabel = new Label();
+            DeckNameBox = new TextBox();
             SuspendLayout();
             // 
             // SearchButton
@@ -190,11 +192,30 @@
             DeckPrice.TabIndex = 31;
             DeckPrice.Text = "Market: $0.0";
             // 
+            // DeckNameLabel
+            // 
+            DeckNameLabel.AutoSize = true;
+            DeckNameLabel.Font = new Font("Segoe UI", 11F);
+            DeckNameLabel.Location = new Point(994, 142);
+            DeckNameLabel.Name = "DeckNameLabel";
+            DeckNameLabel.Size = new Size(89, 20);
+            DeckNameLabel.TabIndex = 33;
+            DeckNameLabel.Text = "Deck Name:";
+            // 
+            // DeckNameBox
+            // 
+            DeckNameBox.Location = new Point(1089, 139);
+            DeckNameBox.Name = "DeckNameBox";
+            DeckNameBox.Size = new Size(211, 23);
+            DeckNameBox.TabIndex = 32;
+            // 
             // CreateDeckListPokemon
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1312, 940);
+            Controls.Add(DeckNameLabel);
+            Controls.Add(DeckNameBox);
             Controls.Add(DeckPrice);
             Controls.Add(SearchButton);
             Controls.Add(NextButton);
@@ -231,5 +252,7 @@
         private Label label2;
         private Label label1;
         private Label DeckPrice;
+        private Label DeckNameLabel;
+        private TextBox DeckNameBox;
     }
 }

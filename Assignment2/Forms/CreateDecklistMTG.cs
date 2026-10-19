@@ -36,6 +36,7 @@ namespace Assignment2
             PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
             DeckPrice.Text = $"Market: ${Math.Round(deck.CalculateDeckPrice(), 2)}";
             DeckCount.Text = $"{deck.DeckCount}/60";
+            DeckNameBox.Text = deck.Name;
         }
 
         //Function to load cards.
@@ -115,8 +116,17 @@ namespace Assignment2
         //Save the deck on click.
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            deck.SaveDeckList();
-            this.Close();
+            if (!DeckNameBox.Text.Equals(""))
+            {
+                deck.Name = DeckNameBox.Text;
+                deck.SaveDeckList();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a deck name.");
+            }
+            
         }
 
         private void NextButton_Click(object sender, EventArgs e)

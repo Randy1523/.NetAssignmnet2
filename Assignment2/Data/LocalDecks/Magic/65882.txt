@@ -1,5 +1,0 @@
-65882
-15023|Normal|Abundance|4|Group: 1
-15023|Foil|Abundance|4|Group: 1
-15024|Normal|Academy Researchers|1|Group: 1
-15024|Foil|Academy Researchers|3|Group: 1

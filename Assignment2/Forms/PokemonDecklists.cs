@@ -31,7 +31,7 @@ namespace Assignment2.Forms
             foreach (PokemonDeck deck in decks)
             {
                 DeckView deckView = new DeckView();
-                deckView.SetDeckCode(deck.deckID);
+                deckView.SetDeckCode(deck.Name);
                 deckView.setImage(deck.Cards.Keys.First().ImageURL);
 
                 DecklistPanel.Controls.Add(deckView);

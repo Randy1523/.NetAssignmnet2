@@ -5,6 +5,8 @@
         public Dictionary<MagicCard, int> Cards;
         public int deckID;
         public int DeckCount;
+
+        public string Name { get; set; }
         public MagicDeck()
         {
             Cards = new Dictionary<MagicCard, int>();
@@ -19,7 +21,7 @@
             deckID = code;
         }
 
-        //Caculates deck price
+        //Next 3 functions calculate the deck prices based on the prices. Market can be null and thus 0, so low will be used in that case
         public float CalculateDeckPrice()
         {
 
@@ -120,7 +122,8 @@
 
             }
         }
-
+        
+        //Alternate to add a card. Primarily for when constructing from file.
         public void AddCard(MagicCard card, int i)
         {
             if (card.GetType() == typeof(MagicCard))
@@ -183,7 +186,7 @@
 
             FileManager.Overwrite(path);
 
-            FileManager.AppendToFile(path, deckID.ToString());
+            FileManager.AppendToFile(path, $"{deckID.ToString()}|{Name}");
 
             foreach (KeyValuePair<MagicCard, int> card in Cards)
             {

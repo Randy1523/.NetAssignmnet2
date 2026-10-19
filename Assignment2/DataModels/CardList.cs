@@ -4,6 +4,7 @@ namespace Assignment2.DataModels
 {
     public abstract class CardList<TKey, TCard> where TKey : ITuple where TCard : Card
     {
+        //Container class for our cards
         private Dictionary<TKey, TCard> Dict { get; } = [];
 
         public List<TCard> List => [.. Dict.Values];

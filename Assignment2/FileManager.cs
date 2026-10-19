@@ -66,7 +66,9 @@ namespace Assignment2
 
 
                 string[] lines = File.ReadAllLines(path);
-                MagicDeck deck = new(Int32.Parse(lines[0]));
+                string[] header = lines[0].Split("|");
+                MagicDeck deck = new(Int32.Parse(header[0]));
+                deck.Name = header[1];
 
                 for (int i = 1; i < lines.Length; i++)
                 {
@@ -95,7 +97,9 @@ namespace Assignment2
 
 
                 string[] lines = File.ReadAllLines(path);
-                PokemonDeck deck = new(Int32.Parse(lines[0]));
+                string[] header = lines[0].Split("|");
+                PokemonDeck deck = new(Int32.Parse(header[0]));
+                deck.Name = header[1];
 
                 for (int i = 1; i < lines.Length; i++)
                 {

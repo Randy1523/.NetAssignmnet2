@@ -1,5 +1,6 @@
 ﻿namespace Assignment2.DataModels
 {
+    //Container class for MagicCards
     public class MagicCard : Card
     {
         public static MagicCardList Cards { get; } = new();
@@ -14,6 +15,7 @@
         }
     }
 
+    //Magic Cardlist Container Class
     public class MagicCardList : CardList<(int ProductID, string Rarity), MagicCard>
     {
         protected override string PathFromDataDirectory => "Magic";

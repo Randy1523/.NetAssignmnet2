@@ -1,7 +1,8 @@
 ﻿namespace Assignment2.DataModels
 {
     public abstract class Card
-    {
+    {   
+        //inherited class of all card types
         public int ProductID { get; init; }
         public int GroupID { get; init; }
         public int CategoryID { get; init; }

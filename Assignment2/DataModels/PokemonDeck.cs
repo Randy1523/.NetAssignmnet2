@@ -6,6 +6,7 @@
         public int deckID;
         public int DeckCount;
 
+        public string Name { get; set; }
         public PokemonDeck(int deckID)
         {
             Cards = new Dictionary<PokemonCard, int>();
@@ -71,12 +72,6 @@
             return price;
         }
 
-        //Not sure if we're gonna have time to implement this
-        public bool CheckDeck()
-        {
-            return false;
-        }
-
 
         
         public Dictionary<string,int> ReturnDeckStats()
@@ -116,7 +111,7 @@
 
             FileManager.Overwrite(path);
 
-            FileManager.AppendToFile(path, deckID.ToString());
+            FileManager.AppendToFile(path, $"{deckID.ToString()}|{Name}");
 
             foreach (KeyValuePair<PokemonCard, int> card in Cards)
             {
