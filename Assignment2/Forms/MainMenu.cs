@@ -9,14 +9,9 @@ namespace Assignment2
         public MainMenu()
         {
             InitializeComponent();
-            //Load data into the static Lists.
-            FileManager.MagicCards = FileManager.LoadMagicCards();
 
-            FileManager.MagicCardLookup = Utils.CreateMagicLookup(FileManager.MagicCards);
-
-            FileManager.PokemonCards = FileManager.LoadPokemonCards();
-
-            FileManager.PokemonCardLookup = Utils.CreatePokemonLookup(FileManager.PokemonCards);
+            MagicCard.Cards.InitializeCards();
+            PokemonCard.Cards.InitializeCards();
         }
 
         private void button1_Click(object sender, EventArgs e)

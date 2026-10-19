@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Assignment2.DataModels
+﻿namespace Assignment2.DataModels
 {
-    public class MagicDeck : Deck
+    public class MagicDeck : IDeck
     {
-
         public Dictionary<MagicCard, int> Cards;
         public int deckID;
         public int DeckCount;
@@ -25,11 +20,12 @@ namespace Assignment2.DataModels
         }
 
         //Caculates deck price
-        public float CalculateDeckPrice() {
+        public float CalculateDeckPrice()
+        {
 
             float price = 0;
 
-            foreach(KeyValuePair<MagicCard, int> card in Cards)
+            foreach (KeyValuePair<MagicCard, int> card in Cards)
             {
                 price += card.Key.MarketPrice * card.Value;
 
@@ -39,34 +35,36 @@ namespace Assignment2.DataModels
         }
 
         //Will later be used to check legality of deck, can be cut if we don't see it being useful
-        public bool CheckDeck() {
+        public bool CheckDeck()
+        {
 
             return false;
         }
 
         //To return stats of deck such as colour or type distributions and so on
-        public void ReturnDeckStats() { 
+        public void ReturnDeckStats()
+        {
         }
 
         //Fucntions to add and remove cards.
         public void AddCard(MagicCard card)
         {
-           if(card.GetType() == typeof(MagicCard))
+            if (card.GetType() == typeof(MagicCard))
             {
                 if (!Cards.ContainsKey(card))
                 {
-                    
+
                     Cards.Add(card, 1);
                     DeckCount++;
-                    
+
                 }
                 else
                 {
-                   Cards[card]++;
+                    Cards[card]++;
                     DeckCount++;
                 }
 
-                
+
             }
         }
 

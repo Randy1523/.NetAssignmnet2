@@ -1,12 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Diagnostics.CodeAnalysis;
 
 namespace Assignment2.DataModels
 {
     public class MagicCard : Card
     {
-        public required string CardID { get; set; }
+        public static MagicCardList Cards { get; } = new();
 
+        public int CardNumber { get; }
+
+        public MagicCard(Dictionary<string, string> data) : base(data)
+        {
+            CardType = data["extSubType"];
+            Rarity = data["subTypeName"];
+            CardNumber = int.Parse(data["extNumber"]);
+        }
+    }
+
+    public class MagicCardList : CardList<(int ProductID, string Rarity), MagicCard>
+    {
+        protected override string PathFromDataDirectory => "Magic";
+        protected override string[] HeadersToCheck => ["extNumber", "subTypeName", "imageUrl", "extSubType"];
+
+        protected override MagicCard? ProcessCardData(Dictionary<string, string> data)
+        {
+            if (string.IsNullOrEmpty(data["extNumber"])) return null;
+            return new MagicCard(data);
+        }
+
+        protected override (int, string) Key(MagicCard card) => (card.ProductID, card.Rarity);
     }
 }

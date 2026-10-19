@@ -1,12 +1,5 @@
 ﻿using Assignment2.DataModels;
 using Assignment2.Forms;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 
 namespace Assignment2
 {
@@ -20,12 +13,11 @@ namespace Assignment2
         MagicDeck deck;
         int pageNum = 1;
 
-
         public CreateDecklistMTG()
         {
             InitializeComponent();
 
-            Pages = Utils.ConvertToPages<MagicCard>(FileManager.MagicCards, 20);
+            Pages = Utils.ConvertToPages<MagicCard>(MagicCard.Cards.List, 20);
 
             deck = new MagicDeck();
             LoadCards(Pages[pageNum - 1]);
@@ -37,14 +29,13 @@ namespace Assignment2
         {
             InitializeComponent();
 
-            Pages = Utils.ConvertToPages<MagicCard>(FileManager.MagicCards, 20);
+            Pages = Utils.ConvertToPages<MagicCard>(MagicCard.Cards.List, 20);
 
             this.deck = deck;
             LoadCards(Pages[pageNum - 1]);
             PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
             DeckPrice.Text = "Market: $0.0";
         }
-
 
         //Function to load cards.
         private void LoadCards(List<MagicCard> cards)
@@ -55,7 +46,7 @@ namespace Assignment2
             //For each card add a new cardview in each page. Each page holds 20 cards.
             foreach (MagicCard card in cards)
             {
-                CardView cardView = new CardView();
+                CardView cardView = new();
                 CardContainer.Controls.Add(cardView);
                 cardView.setDetails(card);
 
@@ -68,34 +59,24 @@ namespace Assignment2
                 //Anonymous methods attached to each controller for each deck. One for adding and removing a card respecitively
                 cardView.AddClicked += (s, e) =>
                 {
-
                     if (cardView.QuantityNum < 4 || cardView.Type.Contains("Basic"))
                     {
-                        AddCardClick(cardView.productID, cardView.RarityString);
+                        AddCardClick(int.Parse(cardView.productID), cardView.RarityString);
                         cardView.QuantityNum++;
 
                         cardView.SetQuantity(cardView.QuantityNum);
-                        
                     }
-
-
-
                 };
-
 
                 cardView.RemoveClicked += (s, e) =>
                 {
-
                     if (cardView.QuantityNum > 0)
                     {
-                        RemoveCardClick(cardView.productID, cardView.RarityString);
+                        RemoveCardClick(int.Parse(cardView.productID), cardView.RarityString);
                         cardView.QuantityNum--;
 
                         cardView.SetQuantity(cardView.QuantityNum);
-
                     }
-
-
                 };
             }
             CardContainer.ResumeLayout(true);
@@ -103,33 +84,32 @@ namespace Assignment2
 
         private void FilterCards()
         {
-            if(SearchBox.Text.Equals("") && CardTypes.Text.Equals(""))
+            if (SearchBox.Text.Equals("") && CardTypes.Text.Equals(""))
             {
                 Filtering = false;
                 pageNum = 1;
                 LoadCards(Pages[pageNum - 1]);
-                PageCount.Text = pageNum.ToString()+"/"+Pages.Count;
+                PageCount.Text = pageNum.ToString() + "/" + Pages.Count;
             }
             else
             {
                 Filtering = true;
                 pageNum = 1;
-                List<MagicCard> filtered =  Utils.FilterMagicCards(FileManager.MagicCards, SearchBox.Text);
+                List<MagicCard> filtered = Utils.FilterMagicCards(MagicCard.Cards.List, SearchBox.Text);
                 List<MagicCard> filtered2 = Utils.FilterMagicType(filtered, CardTypes.Text);
 
-                FilteredList = Utils.ConvertToPages<MagicCard>(filtered2,20);
-                if(FilteredList.Count > 0)
+                FilteredList = Utils.ConvertToPages<MagicCard>(filtered2, 20);
+                if (FilteredList.Count > 0)
                 {
                     LoadCards(FilteredList[pageNum - 1]);
                     PageCount.Text = pageNum.ToString() + "/" + FilteredList.Count;
                 }
                 else
                 {
-                    FilteredList.Add(new List<MagicCard>());
+                    FilteredList.Add([]);
                     LoadCards(FilteredList[pageNum - 1]);
                     PageCount.Text = "0/0";
                 }
-                
             }
         }
 
@@ -144,28 +124,22 @@ namespace Assignment2
         {
             if (!Filtering)
             {
-                if(pageNum < Pages.Count)
+                if (pageNum < Pages.Count)
                 {
                     pageNum++;
                     LoadCards(Pages[pageNum - 1]);
                     PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
-
                 }
-                
             }
             else
             {
-                if(pageNum < FilteredList.Count) {
-                
-                
+                if (pageNum < FilteredList.Count)
+                {
                     pageNum++;
                     LoadCards(FilteredList[pageNum - 1]);
                     PageCount.Text = pageNum.ToString() + "/" + FilteredList.Count.ToString();
-                
                 }
-                    
             }
-
         }
 
         //Navigate to the prev page
@@ -185,22 +159,20 @@ namespace Assignment2
                     LoadCards(FilteredList[pageNum - 1]);
                     PageCount.Text = pageNum.ToString() + "/" + FilteredList.Count.ToString();
                 }
-                
             }
         }
 
-
         //Functions to add new and remove cards from the deck and update details accordingly
-        private void AddCardClick(string productID, string rarity)
+        private void AddCardClick(int productID, string rarity)
         {
-            deck.AddCard(FileManager.MagicCardLookup[new Pair(productID, rarity)]);
+            deck.AddCard(MagicCard.Cards.Get((productID, rarity))!);
             DeckCount.Text = deck.DeckCount.ToString() + "/" + "60";
-            DeckPrice.Text = "Market: $"+ Math.Round(deck.CalculateDeckPrice(), 2).ToString();
+            DeckPrice.Text = "Market: $" + Math.Round(deck.CalculateDeckPrice(), 2).ToString();
         }
 
-        private void RemoveCardClick(string productID, string rarity)
+        private void RemoveCardClick(int productID, string rarity)
         {
-            deck.RemoveCard(FileManager.MagicCardLookup[new Pair(productID, rarity)]);
+            deck.RemoveCard(MagicCard.Cards.Get((productID, rarity))!);
             DeckCount.Text = deck.DeckCount.ToString() + "/" + "60";
             DeckPrice.Text = "Market: $" + Math.Round(deck.CalculateDeckPrice(), 2).ToString();
         }
@@ -213,7 +185,7 @@ namespace Assignment2
         public void SetDeck(MagicDeck deck)
         {
             this.deck = deck;
-            LoadCards(Pages[pageNum-1]);
+            LoadCards(Pages[pageNum - 1]);
         }
     }
 }
