@@ -12,17 +12,14 @@ namespace Assignment2
 
             MagicCard.Cards.InitializeCards();
             PokemonCard.Cards.InitializeCards();
+            ClipImage.Load("../../../Data/Images/TCGclip.png");
         }
 
+        //
         private void button1_Click(object sender, EventArgs e)
         {
             TCGSelectCreate form = new TCGSelectCreate();
             form.Show();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void ViewDecklists_Click(object sender, EventArgs e)

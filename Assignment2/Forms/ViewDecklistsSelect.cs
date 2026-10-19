@@ -14,6 +14,8 @@ namespace Assignment2
         public ViewDecklistsSelect()
         {
             InitializeComponent();
+            PokemonBackImage.Load("../../../Data/Images/PokemonCardBack.jpg");
+            MagicBackImage.Load("../../../Data/Images/MagicCardBack.jpg");
         }
 
         private void selectMTG_Click(object sender, EventArgs e)

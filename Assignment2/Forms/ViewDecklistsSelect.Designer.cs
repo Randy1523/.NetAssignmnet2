@@ -30,6 +30,10 @@
         {
             selectMTG = new Button();
             selectPokemon = new Button();
+            PokemonBackImage = new PictureBox();
+            MagicBackImage = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)PokemonBackImage).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)MagicBackImage).BeginInit();
             SuspendLayout();
             // 
             // selectMTG
@@ -52,15 +56,38 @@
             selectPokemon.UseVisualStyleBackColor = true;
             selectPokemon.Click += selectPokemon_Click;
             // 
+            // PokemonBackImage
+            // 
+            PokemonBackImage.ImageLocation = "..\\..\\Data\\Images\\PokemonCardBack.jpg";
+            PokemonBackImage.Location = new Point(462, 86);
+            PokemonBackImage.Name = "PokemonBackImage";
+            PokemonBackImage.Size = new Size(207, 249);
+            PokemonBackImage.SizeMode = PictureBoxSizeMode.Zoom;
+            PokemonBackImage.TabIndex = 5;
+            PokemonBackImage.TabStop = false;
+            // 
+            // MagicBackImage
+            // 
+            MagicBackImage.Location = new Point(120, 86);
+            MagicBackImage.Name = "MagicBackImage";
+            MagicBackImage.Size = new Size(207, 249);
+            MagicBackImage.SizeMode = PictureBoxSizeMode.Zoom;
+            MagicBackImage.TabIndex = 4;
+            MagicBackImage.TabStop = false;
+            // 
             // ViewDecklistsSelect
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(PokemonBackImage);
+            Controls.Add(MagicBackImage);
             Controls.Add(selectMTG);
             Controls.Add(selectPokemon);
             Name = "ViewDecklistsSelect";
             Text = "Form2";
+            ((System.ComponentModel.ISupportInitialize)PokemonBackImage).EndInit();
+            ((System.ComponentModel.ISupportInitialize)MagicBackImage).EndInit();
             ResumeLayout(false);
         }
 
@@ -68,5 +95,7 @@
 
         private Button selectMTG;
         private Button selectPokemon;
+        private PictureBox PokemonBackImage;
+        private PictureBox MagicBackImage;
     }
 }
