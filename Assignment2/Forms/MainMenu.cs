@@ -15,7 +15,10 @@ namespace Assignment2
             ClipImage.Load("../../../Data/Images/TCGclip.png");
         }
 
-        //
+        private void TournamentData_Click(object? sender, EventArgs e)
+        { 
+            UsageData.Navigator.Open();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             TCGSelectCreate form = new TCGSelectCreate();

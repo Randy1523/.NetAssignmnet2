@@ -30,11 +30,11 @@
         {
             CreateDecklist = new Button();
             ViewDecklists = new Button();
-            TournamentData = new Button();
             Title = new Label();
             btnDownload = new Button();
             pictureBox1 = new PictureBox();
             ClipImage = new PictureBox();
+            TournamentData = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ClipImage).BeginInit();
             SuspendLayout();
@@ -59,15 +59,6 @@
             ViewDecklists.Text = "View Decklists";
             ViewDecklists.UseVisualStyleBackColor = true;
             ViewDecklists.Click += ViewDecklists_Click;
-            // 
-            // TournamentData
-            // 
-            TournamentData.Location = new Point(50, 417);
-            TournamentData.Name = "TournamentData";
-            TournamentData.Size = new Size(267, 70);
-            TournamentData.TabIndex = 2;
-            TournamentData.Text = "View Usage Data";
-            TournamentData.UseVisualStyleBackColor = true;
             // 
             // Title
             // 
@@ -107,16 +98,26 @@
             ClipImage.TabIndex = 7;
             ClipImage.TabStop = false;
             // 
+            // TournamentData
+            // 
+            TournamentData.Location = new Point(50, 435);
+            TournamentData.Name = "TournamentData";
+            TournamentData.Size = new Size(267, 70);
+            TournamentData.TabIndex = 8;
+            TournamentData.Text = "View Usage Data";
+            TournamentData.UseVisualStyleBackColor = true;
+            TournamentData.Click += TournamentData_Click;
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1086, 648);
+            Controls.Add(TournamentData);
             Controls.Add(ClipImage);
             Controls.Add(pictureBox1);
             Controls.Add(btnDownload);
             Controls.Add(Title);
-            Controls.Add(TournamentData);
             Controls.Add(ViewDecklists);
             Controls.Add(CreateDecklist);
             Name = "MainMenu";
@@ -131,10 +132,10 @@
 
         private Button CreateDecklist;
         private Button ViewDecklists;
-        private Button TournamentData;
         private Label Title;
         private Button btnDownload;
         private PictureBox pictureBox1;
         private PictureBox ClipImage;
+        private Button TournamentData;
     }
 }
