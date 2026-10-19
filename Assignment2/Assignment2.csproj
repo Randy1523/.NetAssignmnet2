@@ -11,6 +11,7 @@
   <ItemGroup>
     <Folder Include="Data\LocalDecks\Magic\" />
     <Folder Include="Data\LocalDecks\Pokemon\" />
+    <Folder Include="Data\TourneyData\" />
   </ItemGroup>
 
 </Project>

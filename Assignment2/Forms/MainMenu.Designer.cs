@@ -33,6 +33,7 @@
             TournamentData = new Button();
             OtherDecklists = new Button();
             Title = new Label();
+            btnDownload = new Button();
             SuspendLayout();
             // 
             // CreateDecklist
@@ -85,11 +86,23 @@
             Title.Text = "TCG Market Plays";
             Title.Click += label1_Click;
             // 
+            // btnDownload
+            // 
+            btnDownload.BackgroundImageLayout = ImageLayout.None;
+            btnDownload.Location = new Point(106, 63);
+            btnDownload.Name = "btnDownload";
+            btnDownload.Size = new Size(157, 40);
+            btnDownload.TabIndex = 5;
+            btnDownload.Text = "Update Pricing";
+            btnDownload.UseVisualStyleBackColor = true;
+            btnDownload.Click += button1_Click_1;
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1086, 648);
+            Controls.Add(btnDownload);
             Controls.Add(Title);
             Controls.Add(OtherDecklists);
             Controls.Add(TournamentData);
@@ -108,5 +121,6 @@
         private Button TournamentData;
         private Button OtherDecklists;
         private Label Title;
+        private Button btnDownload;
     }
 }

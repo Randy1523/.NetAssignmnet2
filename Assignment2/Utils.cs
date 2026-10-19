@@ -32,5 +32,13 @@
 
             return pages;
         }
+
+        //simple downoad for updating the prices of cards.
+        public static void updatePricing()
+        {
+
+        }
+
+        //update tourney data (?)
     }
 }
