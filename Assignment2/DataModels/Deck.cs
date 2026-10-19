@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Assignment2
+﻿namespace Assignment2.DataModels
 {
-    public interface Deck
+    public interface IDeck
     {
-
         public float CalculateDeckPrice();
 
         public float CalculateDeckPriceLow();
@@ -15,7 +10,5 @@ namespace Assignment2
         public Dictionary<string, int> ReturnDeckStats();
         public bool CheckDeck();
         public void SaveDeckList();
-
-
     }
 }

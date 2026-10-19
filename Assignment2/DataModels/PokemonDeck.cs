@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Assignment2.DataModels
+﻿namespace Assignment2.DataModels
 {
-    public class PokemonDeck : Deck
+    public class PokemonDeck : IDeck
     {
         public Dictionary<PokemonCard, int> Cards;
         public int deckID;
         public int DeckCount;
-         
+
         public PokemonDeck(int deckID)
         {
             Cards = new Dictionary<PokemonCard, int>();
@@ -203,6 +199,5 @@ namespace Assignment2.DataModels
         {
             return Cards[card];
         }
-
     }
 }

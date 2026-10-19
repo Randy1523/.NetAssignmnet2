@@ -1,27 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Assignment2
+﻿namespace Assignment2.DataModels
 {
     public abstract class Card
     {
-        public required string Name { get; set; }
-        public required string ProductID { get; set; }
-        public required string ImageURL {  get; set; }
-        
-        public int GroupID { get; set; }
+        public int ProductID { get; init; }
+        public int GroupID { get; init; }
+        public int CategoryID { get; init; }
+        public string Name { get; init; }
+        public string ImageURL { get; init; }
+        public string CardType { get; init; }
+        public string Rarity { get; init; }
+        public float MarketPrice { get; init; }
+        public float LowPrice { get; init; }
+        public float HighPrice { get; init; }
 
-        public int CategoryID { get; set; }
-
-        public required string CardType { get; set; }
-
-        public float MarketPrice { get; set; }
-
-        public float LowPrice { get; set; }
-
-        public float HighPrice { get; set; }
-
-        public required string Rarity { get; set; }
+        public Card(Dictionary<string, string> data)
+        {
+            ProductID = int.Parse(data["productId"]);
+            GroupID = int.Parse(data["groupId"]);
+            CategoryID = int.Parse(data["categoryId"]);
+            Name = data["name"];
+            ImageURL = data["imageUrl"];
+            CardType = string.Empty;
+            Rarity = string.Empty;
+            MarketPrice = string.IsNullOrEmpty(data["marketPrice"]) ? 0 : float.Parse(data["marketPrice"]);
+            LowPrice = string.IsNullOrEmpty(data["lowPrice"]) ? 0 : float.Parse(data["lowPrice"]);
+            HighPrice = string.IsNullOrEmpty(data["highPrice"]) ? 0 : float.Parse(data["highPrice"]);
+        }
     }
 }
