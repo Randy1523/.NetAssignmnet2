@@ -23,7 +23,7 @@ namespace Assignment2.Forms
         {
             InitializeComponent();
 
-            Pages = Utils.ConvertToPages<PokemonCard>(FileManager.PokemonCards, 20);
+            Pages = Utils.ConvertToPages<PokemonCard>(PokemonCard.Cards.List, 20);
 
             deck = new PokemonDeck();
             LoadCards(Pages[pageNum - 1]);
@@ -35,7 +35,7 @@ namespace Assignment2.Forms
         {
             InitializeComponent();
 
-            Pages = Utils.ConvertToPages<PokemonCard>(FileManager.PokemonCards, 20);
+            Pages = Utils.ConvertToPages<PokemonCard>(PokemonCard.Cards.List, 20);
 
             this.deck = deck;
             LoadCards(Pages[pageNum - 1]);
@@ -99,14 +99,14 @@ namespace Assignment2.Forms
 
         private void AddCardClick(string productID, string rarity)
         {
-            deck.AddCard(FileManager.PokemonCardLookup[new Pair(productID, rarity)]);
+            deck.AddCard(PokemonCard.Cards.Get((productID, rarity))!);
             DeckCount.Text = deck.DeckCount.ToString() + "/" + "60";
             DeckPrice.Text = "Market: $" + Math.Round(deck.CalculateDeckPrice(), 2).ToString();
         }
 
         private void RemoveCardClick(string productID, string rarity)
         {
-            deck.RemoveCard(FileManager.PokemonCardLookup[new Pair(productID, rarity)]);
+            deck.RemoveCard((PokemonCard.Cards.Get((productID, rarity))!);
             DeckCount.Text = deck.DeckCount.ToString() + "/" + "60";
             DeckPrice.Text = "Market: $" + Math.Round(deck.CalculateDeckPrice(), 2).ToString();
         }
@@ -124,7 +124,7 @@ namespace Assignment2.Forms
             {
                 Filtering = true;
                 pageNum = 1;
-                List<PokemonCard> filtered = Utils.FilterPokemonCards(FileManager.PokemonCards, SearchBox.Text);
+                List<PokemonCard> filtered = Utils.FilterPokemonCards(PokemonCard.Cards.List, SearchBox.Text);
                 List<PokemonCard> filtered2 = Utils.FilterPokemonType(filtered, CardTypes.Text);
 
                 FilteredList = Utils.ConvertToPages<PokemonCard>(filtered2, 20);

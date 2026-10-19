@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Assignment2.DataModels;
 
 namespace Assignment2.Forms
 {
@@ -46,7 +47,7 @@ namespace Assignment2.Forms
 
             CardName.Text = CardNameString;
 
-            productID = card.ProductID;
+            productID = card.ProductID.ToString();
 
             RarityString = card.Rarity;
 
