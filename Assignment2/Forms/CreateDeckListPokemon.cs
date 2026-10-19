@@ -33,7 +33,7 @@ namespace Assignment2.Forms
             this.deck = deck;
             LoadCards(Pages[pageNum - 1]);
             PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
-            DeckPrice.Text = $"Market: ${Math.Round(deck.CalculateDeckPrice(),2)}";
+            DeckPrice.Text = $"Market: ${Math.Round(deck.CalculateDeckPrice(), 2)}";
             DeckCount.Text = $"{deck.DeckCount}/60";
         }
         private void LoadCards(List<PokemonCard> cards)
@@ -44,9 +44,9 @@ namespace Assignment2.Forms
             //For each card add a new cardview in each page. Each page holds 20 cards.
             foreach (PokemonCard card in cards)
             {
-                CardView cardView = new CardView();
+                CardView cardView = new();
                 CardContainer.Controls.Add(cardView);
-                cardView.setDetails(card);
+                cardView.SetDetails(card);
                 cardView.SetRarity(card.Foiling);
 
                 //Checks to see if the card is already in the deck and sets the quantity to match.
@@ -118,7 +118,7 @@ namespace Assignment2.Forms
                 }
                 else
                 {
-                    FilteredList.Add(new List<PokemonCard>());
+                    FilteredList.Add([]);
                     LoadCards(FilteredList[pageNum - 1]);
                     PageCount.Text = "0/0";
                 }

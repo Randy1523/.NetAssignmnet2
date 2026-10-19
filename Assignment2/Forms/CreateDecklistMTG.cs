@@ -49,7 +49,7 @@ namespace Assignment2
             {
                 CardView cardView = new();
                 CardContainer.Controls.Add(cardView);
-                cardView.setDetails(card);
+                cardView.SetDetails(card);
 
                 //Checks to see if the card is already in the deck and sets the quantity to match.
                 if (deck.Contains(card))

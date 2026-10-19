@@ -1,4 +1,4 @@
-﻿namespace Assignment2
+﻿namespace Assignment2.Forms
 {
     partial class MainMenu
     {
@@ -31,7 +31,6 @@
             CreateDecklist = new Button();
             ViewDecklists = new Button();
             Title = new Label();
-            btnDownload = new Button();
             pictureBox1 = new PictureBox();
             ClipImage = new PictureBox();
             TournamentData = new Button();
@@ -48,7 +47,7 @@
             CreateDecklist.TabIndex = 0;
             CreateDecklist.Text = "Create New Decklist";
             CreateDecklist.UseVisualStyleBackColor = true;
-            CreateDecklist.Click += button1_Click;
+            CreateDecklist.Click += CreateDecklist_Click;
             // 
             // ViewDecklists
             // 
@@ -69,17 +68,6 @@
             Title.Size = new Size(278, 46);
             Title.TabIndex = 4;
             Title.Text = "TCG Market Plays";
-            // 
-            // btnDownload
-            // 
-            btnDownload.BackgroundImageLayout = ImageLayout.None;
-            btnDownload.Location = new Point(107, 135);
-            btnDownload.Name = "btnDownload";
-            btnDownload.Size = new Size(157, 40);
-            btnDownload.TabIndex = 5;
-            btnDownload.Text = "Update Pricing";
-            btnDownload.UseVisualStyleBackColor = true;
-            btnDownload.Click += button1_Click_1;
             // 
             // pictureBox1
             // 
@@ -112,16 +100,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1086, 648);
             Controls.Add(TournamentData);
             Controls.Add(ClipImage);
             Controls.Add(pictureBox1);
-            Controls.Add(btnDownload);
             Controls.Add(Title);
             Controls.Add(ViewDecklists);
             Controls.Add(CreateDecklist);
             Name = "MainMenu";
-            Text = "TCG Market Plays";
+            Size = new Size(1086, 648);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)ClipImage).EndInit();
             ResumeLayout(false);
@@ -133,7 +119,6 @@
         private Button CreateDecklist;
         private Button ViewDecklists;
         private Label Title;
-        private Button btnDownload;
         private PictureBox pictureBox1;
         private PictureBox ClipImage;
         private Button TournamentData;
