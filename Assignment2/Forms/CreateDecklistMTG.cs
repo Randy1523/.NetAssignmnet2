@@ -95,10 +95,8 @@ namespace Assignment2
             {
                 Filtering = true;
                 pageNum = 1;
-                List<MagicCard> filtered = Utils.FilterMagicCards(MagicCard.Cards.List, SearchBox.Text);
-                List<MagicCard> filtered2 = Utils.FilterMagicType(filtered, CardTypes.Text);
 
-                FilteredList = Utils.ConvertToPages(filtered2, 20);
+                FilteredList = Utils.ConvertToPages([.. (from card in MagicCard.Cards.List where (string.IsNullOrWhiteSpace(SearchBox.Text) || card.Name.Contains(SearchBox.Text, StringComparison.CurrentCultureIgnoreCase)) && card.CardType.Contains(CardTypes.Text) select card)], 20);
                 if (FilteredList.Count > 0)
                 {
                     LoadCards(FilteredList[pageNum - 1]);

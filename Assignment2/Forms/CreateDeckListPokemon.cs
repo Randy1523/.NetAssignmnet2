@@ -1,17 +1,10 @@
-﻿using Assignment2.DataModels;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
+﻿using System.Data;
+using Assignment2.DataModels;
 
 namespace Assignment2.Forms
 {
     public partial class CreateDeckListPokemon : Form
     {
-
         List<List<PokemonCard>> Pages;
 
         List<List<PokemonCard>> FilteredList;
@@ -64,34 +57,25 @@ namespace Assignment2.Forms
                 //Anonymous methods attached to each controller for each deck. One for adding and removing a card respecitively
                 cardView.AddClicked += (s, e) =>
                 {
-
                     if (cardView.QuantityNum < 4 || cardView.Type.Contains("Basic"))
                     {
                         AddCardClick(cardView.productID, cardView.RarityString);
                         cardView.QuantityNum++;
 
                         cardView.SetQuantity(cardView.QuantityNum);
-
                     }
-
-
-
                 };
 
 
                 cardView.RemoveClicked += (s, e) =>
                 {
-
                     if (cardView.QuantityNum > 0)
                     {
                         RemoveCardClick(cardView.productID, cardView.RarityString);
                         cardView.QuantityNum--;
 
                         cardView.SetQuantity(cardView.QuantityNum);
-
                     }
-
-
                 };
             }
             CardContainer.ResumeLayout(true);
@@ -124,10 +108,8 @@ namespace Assignment2.Forms
             {
                 Filtering = true;
                 pageNum = 1;
-                List<PokemonCard> filtered = Utils.FilterPokemonCards(PokemonCard.Cards.List, SearchBox.Text);
-                List<PokemonCard> filtered2 = Utils.FilterPokemonType(filtered, CardTypes.Text);
 
-                FilteredList = Utils.ConvertToPages(filtered2, 20);
+                FilteredList = Utils.ConvertToPages([.. (from card in PokemonCard.Cards.List where (string.IsNullOrWhiteSpace(SearchBox.Text) || card.Name.Contains(SearchBox.Text, StringComparison.CurrentCultureIgnoreCase)) && card.CardType.Contains(CardTypes.Text) select card)], 20);
                 if (FilteredList.Count > 0)
                 {
                     LoadCards(FilteredList[pageNum - 1]);
@@ -139,7 +121,6 @@ namespace Assignment2.Forms
                     LoadCards(FilteredList[pageNum - 1]);
                     PageCount.Text = "0/0";
                 }
-
             }
         }
         private void SearchButton_Click(object sender, EventArgs e)
@@ -156,24 +137,17 @@ namespace Assignment2.Forms
                     pageNum++;
                     LoadCards(Pages[pageNum - 1]);
                     PageCount.Text = pageNum.ToString() + "/" + Pages.Count.ToString();
-
                 }
-
             }
             else
             {
                 if (pageNum < FilteredList.Count)
                 {
-
-
                     pageNum++;
                     LoadCards(FilteredList[pageNum - 1]);
                     PageCount.Text = pageNum.ToString() + "/" + FilteredList.Count.ToString();
-
                 }
-
             }
-
         }
 
         //Navigate to the prev page
